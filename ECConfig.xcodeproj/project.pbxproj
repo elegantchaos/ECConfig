@@ -20,7 +20,6 @@
 		221CB59015DA9B14004C6398 /* ECMacShared.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57E15DA993E004C6398 /* ECMacShared.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB59115DA9B14004C6398 /* ECRelease.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57F15DA993E004C6398 /* ECRelease.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB59215DA9B14004C6398 /* ECShared.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB58015DA993E004C6398 /* ECShared.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB5B215DAA4C4004C6398 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221CB5B115DAA4C4004C6398 /* CoreFoundation.framework */; };
 		221CB5C015DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB5BD15DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB5C215DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB5BE15DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB5D015DAAFE2004C6398 /* ECDebug.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57815DA993E004C6398 /* ECDebug.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,6 +32,8 @@
 		221CB5DB15DAB038004C6398 /* Debug.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56515DA98ED004C6398 /* Debug.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB5DC15DAB038004C6398 /* Release.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56615DA98ED004C6398 /* Release.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB5DD15DAB038004C6398 /* Shared.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56715DA98ED004C6398 /* Shared.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		226153A215DAD312006783C3 /* ECConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CB54C15DA9883004C6398 /* ECConfig.m */; };
+		226153A315DAD31F006783C3 /* ECConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 221CB54B15DA9883004C6398 /* ECConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22BC8E3C15DAB92E00132883 /* ECUnitTests.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 22BC8E3815DAB90300132883 /* ECUnitTests.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		22BC8E3D15DAB93C00132883 /* ECUnitTests.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 22BC8E3815DAB90300132883 /* ECUnitTests.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		22BC8E3F15DAB9FC00132883 /* package-pseudo-framework.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22BC8E3E15DAB9FC00132883 /* package-pseudo-framework.sh */; };
@@ -102,7 +103,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				221CB5B215DAA4C4004C6398 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +273,7 @@
 				221CB5DB15DAB038004C6398 /* Debug.pch in Headers */,
 				221CB5DC15DAB038004C6398 /* Release.pch in Headers */,
 				221CB5DD15DAB038004C6398 /* Shared.pch in Headers */,
+				226153A315DAD31F006783C3 /* ECConfig.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				226153A215DAD312006783C3 /* ECConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
