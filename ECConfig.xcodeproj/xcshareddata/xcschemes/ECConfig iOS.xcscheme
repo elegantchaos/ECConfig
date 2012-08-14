@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "221CB5AF15DAA4C4004C6398"
-               BuildableName = "ECConfigIOS.bundle"
+               BuildableName = "ECConfig.framework"
                BlueprintName = "ECConfigIOS"
                ReferencedContainer = "container:ECConfig.xcodeproj">
             </BuildableReference>
