@@ -6,4 +6,4 @@
 
 // Contains standard definitions needed to link a unit test target
 
-FRAMEWORK_SEARCH_PATHS = $(DEVELOPER_LIBRARY_DIR)/Frameworks
+FRAMEWORK_SEARCH_PATHS = "$(UNIT_TEST_FRAMEWORK_PATH)"

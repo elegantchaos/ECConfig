@@ -6,3 +6,4 @@
 
 SDKROOT = iphoneos
 
+UNIT_TEST_FRAMEWORK_PATH = "$(SDKROOT)/Developer/Library/Frameworks"
