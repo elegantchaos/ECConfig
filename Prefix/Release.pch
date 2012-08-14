@@ -8,5 +8,5 @@
 #define EC_CONFIGURATION_STRING @"Release"
 #define EC_CONFIGURATION_STRING_SHORT @"R"
 
-#import "ECShared.pch"
+#import "Shared.pch"
 

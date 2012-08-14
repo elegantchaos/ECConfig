@@ -1,0 +1,21 @@
+// --------------------------------------------------------------------------
+//  Copyright 2012 Sam Deane, Elegant Chaos. All rights reserved.
+//  This source code is distributed under the terms of Elegant Chaos's
+//  liberal license: http://www.elegantchaos.com/license/liberal
+// --------------------------------------------------------------------------
+
+// Contains standard definitions needed to link a bundle-style target as a pseudo-framework on iOS
+
+ARCHS = $(ARCHS_STANDARD_32_BIT)
+SDKROOT = iphoneos
+
+PRODUCT_NAME=$(PROJECT_NAME)
+INSTALL_PATH = $(LOCAL_LIBRARY_DIR)/Frameworks
+SKIP_INSTALL = YES
+DEAD_CODE_STRIPPING = NO
+LINK_WITH_STANDARD_LIBRARIES = NO
+MACH_O_TYPE = mh_object
+OTHER_LDFLAGS = -ObjC -all_load
+EXECUTABLE_PREFIX = Versions/A/
+PUBLIC_HEADERS_FOLDER_PATH = $(CONTENTS_FOLDER_PATH)/Versions/A/Headers
+WRAPPER_EXTENSION = framework

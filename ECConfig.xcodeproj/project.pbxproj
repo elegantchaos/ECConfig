@@ -11,9 +11,9 @@
 		221CB55215DA9883004C6398 /* ECConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 221CB54B15DA9883004C6398 /* ECConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB55315DA9883004C6398 /* ECConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CB54C15DA9883004C6398 /* ECConfig.m */; };
 		221CB55415DA9883004C6398 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 221CB54E15DA9883004C6398 /* InfoPlist.strings */; };
-		221CB57415DA98ED004C6398 /* ECDebug.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56515DA98ED004C6398 /* ECDebug.pch */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB57515DA98ED004C6398 /* ECRelease.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56615DA98ED004C6398 /* ECRelease.pch */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB57615DA98ED004C6398 /* ECShared.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56715DA98ED004C6398 /* ECShared.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		221CB57415DA98ED004C6398 /* Debug.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56515DA98ED004C6398 /* Debug.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		221CB57515DA98ED004C6398 /* Release.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56615DA98ED004C6398 /* Release.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		221CB57615DA98ED004C6398 /* Shared.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56715DA98ED004C6398 /* Shared.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB58115DA993E004C6398 /* ECDebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB57815DA993E004C6398 /* ECDebug.xcconfig */; };
 		221CB58215DA993E004C6398 /* ECIOSDebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB57915DA993E004C6398 /* ECIOSDebug.xcconfig */; };
 		221CB58315DA993E004C6398 /* ECIOSRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB57A15DA993E004C6398 /* ECIOSRelease.xcconfig */; };
@@ -32,6 +32,13 @@
 		221CB59015DA9B14004C6398 /* ECMacShared.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57E15DA993E004C6398 /* ECMacShared.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB59115DA9B14004C6398 /* ECRelease.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57F15DA993E004C6398 /* ECRelease.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB59215DA9B14004C6398 /* ECShared.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB58015DA993E004C6398 /* ECShared.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
+		221CB5AA15DAA41E004C6398 /* ECPseudoFramework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB5A915DAA41E004C6398 /* ECPseudoFramework.xcconfig */; };
+		221CB5B215DAA4C4004C6398 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221CB5B115DAA4C4004C6398 /* CoreFoundation.framework */; };
+		221CB5B815DAA4C4004C6398 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 221CB5B615DAA4C4004C6398 /* InfoPlist.strings */; };
+		221CB5BF15DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB5BD15DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig */; };
+		221CB5C015DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB5BD15DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig */; };
+		221CB5C115DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB5BE15DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig */; };
+		221CB5C215DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB5BE15DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,9 +52,9 @@
 		221CB54C15DA9883004C6398 /* ECConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECConfig.m; sourceTree = "<group>"; };
 		221CB54F15DA9883004C6398 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		221CB55015DA9883004C6398 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		221CB56515DA98ED004C6398 /* ECDebug.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECDebug.pch; sourceTree = "<group>"; };
-		221CB56615DA98ED004C6398 /* ECRelease.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECRelease.pch; sourceTree = "<group>"; };
-		221CB56715DA98ED004C6398 /* ECShared.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECShared.pch; sourceTree = "<group>"; };
+		221CB56515DA98ED004C6398 /* Debug.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Debug.pch; sourceTree = "<group>"; };
+		221CB56615DA98ED004C6398 /* Release.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Release.pch; sourceTree = "<group>"; };
+		221CB56715DA98ED004C6398 /* Shared.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shared.pch; sourceTree = "<group>"; };
 		221CB57815DA993E004C6398 /* ECDebug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECDebug.xcconfig; sourceTree = "<group>"; };
 		221CB57915DA993E004C6398 /* ECIOSDebug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECIOSDebug.xcconfig; sourceTree = "<group>"; };
 		221CB57A15DA993E004C6398 /* ECIOSRelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECIOSRelease.xcconfig; sourceTree = "<group>"; };
@@ -57,6 +64,14 @@
 		221CB57E15DA993E004C6398 /* ECMacShared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECMacShared.xcconfig; sourceTree = "<group>"; };
 		221CB57F15DA993E004C6398 /* ECRelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECRelease.xcconfig; sourceTree = "<group>"; };
 		221CB58015DA993E004C6398 /* ECShared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECShared.xcconfig; sourceTree = "<group>"; };
+		221CB5A915DAA41E004C6398 /* ECPseudoFramework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECPseudoFramework.xcconfig; sourceTree = "<group>"; };
+		221CB5B015DAA4C4004C6398 /* ECConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		221CB5B115DAA4C4004C6398 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		221CB5B515DAA4C4004C6398 /* ECConfigIOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ECConfigIOS-Info.plist"; sourceTree = "<group>"; };
+		221CB5B715DAA4C4004C6398 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		221CB5B915DAA4C4004C6398 /* ECConfigIOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ECConfigIOS-Prefix.pch"; sourceTree = "<group>"; };
+		221CB5BD15DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECIOSFrameworkDebug.xcconfig; sourceTree = "<group>"; };
+		221CB5BE15DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECIOSFrameworkRelease.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +80,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				221CB53215DA9816004C6398 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		221CB5AD15DAA4C4004C6398 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221CB5B215DAA4C4004C6398 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +101,7 @@
 				221CB56315DA98ED004C6398 /* Prefix */,
 				221CB54915DA9883004C6398 /* Generic */,
 				221CB54D15DA9883004C6398 /* Resources */,
+				221CB5B315DAA4C4004C6398 /* ECConfigIOS */,
 				221CB53015DA9816004C6398 /* Frameworks */,
 				221CB52F15DA9816004C6398 /* Products */,
 			);
@@ -87,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				221CB52E15DA9816004C6398 /* ECConfig.framework */,
+				221CB5B015DAA4C4004C6398 /* ECConfig.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				221CB53115DA9816004C6398 /* Cocoa.framework */,
+				221CB5B115DAA4C4004C6398 /* CoreFoundation.framework */,
 				221CB53315DA9816004C6398 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -132,9 +158,9 @@
 		221CB56315DA98ED004C6398 /* Prefix */ = {
 			isa = PBXGroup;
 			children = (
-				221CB56515DA98ED004C6398 /* ECDebug.pch */,
-				221CB56615DA98ED004C6398 /* ECRelease.pch */,
-				221CB56715DA98ED004C6398 /* ECShared.pch */,
+				221CB56515DA98ED004C6398 /* Debug.pch */,
+				221CB56615DA98ED004C6398 /* Release.pch */,
+				221CB56715DA98ED004C6398 /* Shared.pch */,
 			);
 			path = Prefix;
 			sourceTree = "<group>";
@@ -143,16 +169,53 @@
 			isa = PBXGroup;
 			children = (
 				221CB57815DA993E004C6398 /* ECDebug.xcconfig */,
+				221CB57F15DA993E004C6398 /* ECRelease.xcconfig */,
+				221CB58015DA993E004C6398 /* ECShared.xcconfig */,
+				221CB5CD15DAA933004C6398 /* iOS */,
+				221CB5CE15DAA93D004C6398 /* Mac */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		221CB5B315DAA4C4004C6398 /* ECConfigIOS */ = {
+			isa = PBXGroup;
+			children = (
+				221CB5B415DAA4C4004C6398 /* Supporting Files */,
+			);
+			path = ECConfigIOS;
+			sourceTree = "<group>";
+		};
+		221CB5B415DAA4C4004C6398 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				221CB5B515DAA4C4004C6398 /* ECConfigIOS-Info.plist */,
+				221CB5B615DAA4C4004C6398 /* InfoPlist.strings */,
+				221CB5B915DAA4C4004C6398 /* ECConfigIOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		221CB5CD15DAA933004C6398 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				221CB5BD15DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig */,
+				221CB5BE15DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig */,
+				221CB5A915DAA41E004C6398 /* ECPseudoFramework.xcconfig */,
 				221CB57915DA993E004C6398 /* ECIOSDebug.xcconfig */,
 				221CB57A15DA993E004C6398 /* ECIOSRelease.xcconfig */,
 				221CB57B15DA993E004C6398 /* ECIOSShared.xcconfig */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		221CB5CE15DAA93D004C6398 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
 				221CB57C15DA993E004C6398 /* ECMacDebug.xcconfig */,
 				221CB57D15DA993E004C6398 /* ECMacRelease.xcconfig */,
 				221CB57E15DA993E004C6398 /* ECMacShared.xcconfig */,
-				221CB57F15DA993E004C6398 /* ECRelease.xcconfig */,
-				221CB58015DA993E004C6398 /* ECShared.xcconfig */,
 			);
-			path = Configuration;
+			name = Mac;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,9 +226,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				221CB55215DA9883004C6398 /* ECConfig.h in Headers */,
-				221CB57415DA98ED004C6398 /* ECDebug.pch in Headers */,
-				221CB57515DA98ED004C6398 /* ECRelease.pch in Headers */,
-				221CB57615DA98ED004C6398 /* ECShared.pch in Headers */,
+				221CB57415DA98ED004C6398 /* Debug.pch in Headers */,
+				221CB57515DA98ED004C6398 /* Release.pch in Headers */,
+				221CB57615DA98ED004C6398 /* Shared.pch in Headers */,
 				221CB58A15DA9B0A004C6398 /* ECDebug.xcconfig in Headers */,
 				221CB58B15DA9B14004C6398 /* ECIOSDebug.xcconfig in Headers */,
 				221CB58C15DA9B14004C6398 /* ECIOSRelease.xcconfig in Headers */,
@@ -199,6 +262,23 @@
 			productReference = 221CB52E15DA9816004C6398 /* ECConfig.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		221CB5AF15DAA4C4004C6398 /* ECConfigIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 221CB5BA15DAA4C4004C6398 /* Build configuration list for PBXNativeTarget "ECConfigIOS" */;
+			buildPhases = (
+				221CB5AC15DAA4C4004C6398 /* Sources */,
+				221CB5AD15DAA4C4004C6398 /* Frameworks */,
+				221CB5AE15DAA4C4004C6398 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ECConfigIOS;
+			productName = ECConfigIOS;
+			productReference = 221CB5B015DAA4C4004C6398 /* ECConfig.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -221,6 +301,7 @@
 			projectRoot = "";
 			targets = (
 				221CB52D15DA9816004C6398 /* ECConfigMac */,
+				221CB5AF15DAA4C4004C6398 /* ECConfigIOS */,
 			);
 		};
 /* End PBXProject section */
@@ -240,6 +321,19 @@
 				221CB58715DA993E004C6398 /* ECMacShared.xcconfig in Resources */,
 				221CB58815DA993E004C6398 /* ECRelease.xcconfig in Resources */,
 				221CB58915DA993E004C6398 /* ECShared.xcconfig in Resources */,
+				221CB5AA15DAA41E004C6398 /* ECPseudoFramework.xcconfig in Resources */,
+				221CB5BF15DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig in Resources */,
+				221CB5C115DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		221CB5AE15DAA4C4004C6398 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221CB5B815DAA4C4004C6398 /* InfoPlist.strings in Resources */,
+				221CB5C015DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig in Resources */,
+				221CB5C215DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +348,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		221CB5AC15DAA4C4004C6398 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -265,55 +366,26 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		221CB5B615DAA4C4004C6398 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				221CB5B715DAA4C4004C6398 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		221CB54115DA9816004C6398 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(PROJECT_NAME)";
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		221CB54215DA9816004C6398 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_NAME = "$(PROJECT_NAME)";
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -325,9 +397,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Prefix/EC$(CONFIGURATION).pch";
 				INFOPLIST_FILE = Resources/Info.plist;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -340,10 +411,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Prefix/EC$(CONFIGURATION).pch";
 				INFOPLIST_FILE = Resources/Info.plist;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		221CB5BB15DAA4C4004C6398 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 221CB5BD15DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		221CB5BC15DAA4C4004C6398 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 221CB5BE15DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig */;
+			buildSettings = {
 			};
 			name = Release;
 		};
@@ -357,7 +441,7 @@
 				221CB54215DA9816004C6398 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		221CB54315DA9816004C6398 /* Build configuration list for PBXNativeTarget "ECConfigMac" */ = {
 			isa = XCConfigurationList;
@@ -366,7 +450,16 @@
 				221CB54515DA9816004C6398 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
+		};
+		221CB5BA15DAA4C4004C6398 /* Build configuration list for PBXNativeTarget "ECConfigIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				221CB5BB15DAA4C4004C6398 /* Debug */,
+				221CB5BC15DAA4C4004C6398 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

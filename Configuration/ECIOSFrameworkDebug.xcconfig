@@ -4,5 +4,7 @@
 //  liberal license: http://www.elegantchaos.com/license/liberal
 // --------------------------------------------------------------------------
 
-#include "ECRelease.xcconfig"
-#include "ECIOSShared.xcconfig"
+#include "ECPseudoFramework.xcconfig"
+#include "ECIOSDebug.xcconfig"
+
+
