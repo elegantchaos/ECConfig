@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ECConfig' target in the 'ECConfig' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
