@@ -1,33 +1,27 @@
 // --------------------------------------------------------------------------
-//! Standard Elegant Chaos configuration settings.
-//
-// (c) Elegant Chaos.
+//  Copyright 2012 Sam Deane, Elegant Chaos. All rights reserved.
+//  This source code is distributed under the terms of Elegant Chaos's
+//  liberal license: http://www.elegantchaos.com/license/liberal
 // --------------------------------------------------------------------------
 
+#include "ECShared.xcconfig"
 
 // --------------------------------------------------------------------------
 // Build Options
 // --------------------------------------------------------------------------
 
-// --------------------------------------------------------------------------
-// Deployment
-// --------------------------------------------------------------------------
-
-INSTALL_PATH = $(HOME)/Applications
-
-// --------------------------------------------------------------------------
-// Architectures
-// --------------------------------------------------------------------------
-
-ARCHS = $(ARCHS_STANDARD_32_64_BIT)
-SDKROOT = macosx
-MACOSX_DEPLOYMENT_TARGET = 10.5
-
+RUN_CLANG_STATIC_ANALYZER = YES
 
 // --------------------------------------------------------------------------
 // Code Generation
 // --------------------------------------------------------------------------
 
-//GCC_VERSION = com.apple.compilers.llvmgcc42 // temporarily use gcc because of xcode 4 problem
-GCC_MODEL_TUNING = G5
+GCC_DYNAMIC_NO_PIC = NO
+GCC_OPTIMIZATION_LEVEL = 0
+
+// --------------------------------------------------------------------------
+// Deployment
+// --------------------------------------------------------------------------
+
+COPY_PHASE_STRIP = NO
 

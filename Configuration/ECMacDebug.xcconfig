@@ -1,27 +1,29 @@
 // --------------------------------------------------------------------------
-//! Standard Elegant Chaos debug configuration settings.
-//
-// (c) Elegant Chaos.
+//  Copyright 2012 Sam Deane, Elegant Chaos. All rights reserved.
+//  This source code is distributed under the terms of Elegant Chaos's
+//  liberal license: http://www.elegantchaos.com/license/liberal
 // --------------------------------------------------------------------------
 
-#include "ECFoundationSharedSettings.xcconfig"
+#include "ECDebug.xcconfig"
+#include "ECMacShared.xcconfig"
 
 // --------------------------------------------------------------------------
-// Build Options
+// Architectures
 // --------------------------------------------------------------------------
 
-RUN_CLANG_STATIC_ANALYZER = YES
-
-// --------------------------------------------------------------------------
-// Code Generation
-// --------------------------------------------------------------------------
-
-GCC_DYNAMIC_NO_PIC = NO
-GCC_OPTIMIZATION_LEVEL = 0
+ONLY_ACTIVE_ARCH = YES
 
 // --------------------------------------------------------------------------
 // Deployment
 // --------------------------------------------------------------------------
 
 COPY_PHASE_STRIP = NO
+
+// --------------------------------------------------------------------------
+// GCC 4.2 Code Generation
+// --------------------------------------------------------------------------
+
+GCC_ENABLE_FIX_AND_CONTINUE = YES
+GCC_DYNAMIC_NO_PIC = NO
+GCC_OPTIMIZATION_LEVEL = 0
 
