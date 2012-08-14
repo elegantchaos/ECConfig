@@ -14,31 +14,26 @@
 		221CB57415DA98ED004C6398 /* Debug.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56515DA98ED004C6398 /* Debug.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB57515DA98ED004C6398 /* Release.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56615DA98ED004C6398 /* Release.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB57615DA98ED004C6398 /* Shared.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56715DA98ED004C6398 /* Shared.pch */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB58115DA993E004C6398 /* ECDebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB57815DA993E004C6398 /* ECDebug.xcconfig */; };
-		221CB58215DA993E004C6398 /* ECIOSDebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB57915DA993E004C6398 /* ECIOSDebug.xcconfig */; };
-		221CB58315DA993E004C6398 /* ECIOSRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB57A15DA993E004C6398 /* ECIOSRelease.xcconfig */; };
-		221CB58415DA993E004C6398 /* ECIOSShared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB57B15DA993E004C6398 /* ECIOSShared.xcconfig */; };
-		221CB58515DA993E004C6398 /* ECMacDebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB57C15DA993E004C6398 /* ECMacDebug.xcconfig */; };
-		221CB58615DA993E004C6398 /* ECMacRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB57D15DA993E004C6398 /* ECMacRelease.xcconfig */; };
-		221CB58715DA993E004C6398 /* ECMacShared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB57E15DA993E004C6398 /* ECMacShared.xcconfig */; };
-		221CB58815DA993E004C6398 /* ECRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB57F15DA993E004C6398 /* ECRelease.xcconfig */; };
-		221CB58915DA993E004C6398 /* ECShared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB58015DA993E004C6398 /* ECShared.xcconfig */; };
 		221CB58A15DA9B0A004C6398 /* ECDebug.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57815DA993E004C6398 /* ECDebug.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB58B15DA9B14004C6398 /* ECIOSDebug.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57915DA993E004C6398 /* ECIOSDebug.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB58C15DA9B14004C6398 /* ECIOSRelease.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57A15DA993E004C6398 /* ECIOSRelease.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB58D15DA9B14004C6398 /* ECIOSShared.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57B15DA993E004C6398 /* ECIOSShared.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB58E15DA9B14004C6398 /* ECMacDebug.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57C15DA993E004C6398 /* ECMacDebug.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB58F15DA9B14004C6398 /* ECMacRelease.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57D15DA993E004C6398 /* ECMacRelease.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB59015DA9B14004C6398 /* ECMacShared.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57E15DA993E004C6398 /* ECMacShared.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB59115DA9B14004C6398 /* ECRelease.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57F15DA993E004C6398 /* ECRelease.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB59215DA9B14004C6398 /* ECShared.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB58015DA993E004C6398 /* ECShared.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB5AA15DAA41E004C6398 /* ECPseudoFramework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB5A915DAA41E004C6398 /* ECPseudoFramework.xcconfig */; };
 		221CB5B215DAA4C4004C6398 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221CB5B115DAA4C4004C6398 /* CoreFoundation.framework */; };
-		221CB5B815DAA4C4004C6398 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 221CB5B615DAA4C4004C6398 /* InfoPlist.strings */; };
-		221CB5BF15DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB5BD15DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig */; };
-		221CB5C015DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB5BD15DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig */; };
-		221CB5C115DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB5BE15DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig */; };
-		221CB5C215DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 221CB5BE15DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig */; };
+		221CB5C015DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB5BD15DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
+		221CB5C215DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB5BE15DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
+		221CB5CF15DAAFBA004C6398 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 221CB54E15DA9883004C6398 /* InfoPlist.strings */; };
+		221CB5D015DAAFE2004C6398 /* ECDebug.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57815DA993E004C6398 /* ECDebug.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
+		221CB5D115DAAFE2004C6398 /* ECRelease.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57F15DA993E004C6398 /* ECRelease.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
+		221CB5D215DAAFE2004C6398 /* ECShared.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB58015DA993E004C6398 /* ECShared.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
+		221CB5D315DAAFE2004C6398 /* ECPseudoFramework.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB5A915DAA41E004C6398 /* ECPseudoFramework.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
+		221CB5D415DAAFE2004C6398 /* ECIOSDebug.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57915DA993E004C6398 /* ECIOSDebug.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
+		221CB5D515DAAFE2004C6398 /* ECIOSRelease.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57A15DA993E004C6398 /* ECIOSRelease.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
+		221CB5D615DAAFE2004C6398 /* ECIOSShared.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57B15DA993E004C6398 /* ECIOSShared.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
+		221CB5DB15DAB038004C6398 /* Debug.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56515DA98ED004C6398 /* Debug.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		221CB5DC15DAB038004C6398 /* Release.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56615DA98ED004C6398 /* Release.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		221CB5DD15DAB038004C6398 /* Shared.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56715DA98ED004C6398 /* Shared.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -230,14 +225,30 @@
 				221CB57515DA98ED004C6398 /* Release.pch in Headers */,
 				221CB57615DA98ED004C6398 /* Shared.pch in Headers */,
 				221CB58A15DA9B0A004C6398 /* ECDebug.xcconfig in Headers */,
-				221CB58B15DA9B14004C6398 /* ECIOSDebug.xcconfig in Headers */,
-				221CB58C15DA9B14004C6398 /* ECIOSRelease.xcconfig in Headers */,
-				221CB58D15DA9B14004C6398 /* ECIOSShared.xcconfig in Headers */,
+				221CB59115DA9B14004C6398 /* ECRelease.xcconfig in Headers */,
+				221CB59215DA9B14004C6398 /* ECShared.xcconfig in Headers */,
 				221CB58E15DA9B14004C6398 /* ECMacDebug.xcconfig in Headers */,
 				221CB58F15DA9B14004C6398 /* ECMacRelease.xcconfig in Headers */,
 				221CB59015DA9B14004C6398 /* ECMacShared.xcconfig in Headers */,
-				221CB59115DA9B14004C6398 /* ECRelease.xcconfig in Headers */,
-				221CB59215DA9B14004C6398 /* ECShared.xcconfig in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		221CB5DA15DAB01F004C6398 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221CB5D015DAAFE2004C6398 /* ECDebug.xcconfig in Headers */,
+				221CB5D115DAAFE2004C6398 /* ECRelease.xcconfig in Headers */,
+				221CB5D215DAAFE2004C6398 /* ECShared.xcconfig in Headers */,
+				221CB5C015DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig in Headers */,
+				221CB5C215DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig in Headers */,
+				221CB5D315DAAFE2004C6398 /* ECPseudoFramework.xcconfig in Headers */,
+				221CB5D415DAAFE2004C6398 /* ECIOSDebug.xcconfig in Headers */,
+				221CB5D515DAAFE2004C6398 /* ECIOSRelease.xcconfig in Headers */,
+				221CB5D615DAAFE2004C6398 /* ECIOSShared.xcconfig in Headers */,
+				221CB5DB15DAB038004C6398 /* Debug.pch in Headers */,
+				221CB5DC15DAB038004C6398 /* Release.pch in Headers */,
+				221CB5DD15DAB038004C6398 /* Shared.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +277,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 221CB5BA15DAA4C4004C6398 /* Build configuration list for PBXNativeTarget "ECConfigIOS" */;
 			buildPhases = (
+				221CB5DA15DAB01F004C6398 /* Headers */,
 				221CB5AC15DAA4C4004C6398 /* Sources */,
 				221CB5AD15DAA4C4004C6398 /* Frameworks */,
 				221CB5AE15DAA4C4004C6398 /* Resources */,
@@ -312,18 +324,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				221CB55415DA9883004C6398 /* InfoPlist.strings in Resources */,
-				221CB58115DA993E004C6398 /* ECDebug.xcconfig in Resources */,
-				221CB58215DA993E004C6398 /* ECIOSDebug.xcconfig in Resources */,
-				221CB58315DA993E004C6398 /* ECIOSRelease.xcconfig in Resources */,
-				221CB58415DA993E004C6398 /* ECIOSShared.xcconfig in Resources */,
-				221CB58515DA993E004C6398 /* ECMacDebug.xcconfig in Resources */,
-				221CB58615DA993E004C6398 /* ECMacRelease.xcconfig in Resources */,
-				221CB58715DA993E004C6398 /* ECMacShared.xcconfig in Resources */,
-				221CB58815DA993E004C6398 /* ECRelease.xcconfig in Resources */,
-				221CB58915DA993E004C6398 /* ECShared.xcconfig in Resources */,
-				221CB5AA15DAA41E004C6398 /* ECPseudoFramework.xcconfig in Resources */,
-				221CB5BF15DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig in Resources */,
-				221CB5C115DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,9 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				221CB5B815DAA4C4004C6398 /* InfoPlist.strings in Resources */,
-				221CB5C015DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig in Resources */,
-				221CB5C215DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig in Resources */,
+				221CB5CF15DAAFBA004C6398 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 221CB5BD15DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig */;
 			buildSettings = {
+				INFOPLIST_FILE = Resources/Info.plist;
 			};
 			name = Debug;
 		};
@@ -428,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 221CB5BE15DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig */;
 			buildSettings = {
+				INFOPLIST_FILE = Resources/Info.plist;
 			};
 			name = Release;
 		};
