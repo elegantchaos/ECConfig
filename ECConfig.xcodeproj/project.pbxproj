@@ -414,7 +414,7 @@
 		};
 		221CB54415DA9816004C6398 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 221CB57C15DA993E004C6398 /* ECMacDebug.xcconfig */;
+			baseConfigurationReference = 2251BA4915DBCDA800F2FE40 /* ECMacFrameworkDebug.xcconfig */;
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -426,7 +426,7 @@
 		};
 		221CB54515DA9816004C6398 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 221CB57D15DA993E004C6398 /* ECMacRelease.xcconfig */;
+			baseConfigurationReference = 2251BA4815DBCDA800F2FE40 /* ECMacFrameworkRelease.xcconfig */;
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
