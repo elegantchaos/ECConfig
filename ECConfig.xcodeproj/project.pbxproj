@@ -83,9 +83,6 @@
 		221CB5A915DAA41E004C6398 /* ECPseudoFramework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECPseudoFramework.xcconfig; sourceTree = "<group>"; };
 		221CB5B015DAA4C4004C6398 /* ECConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		221CB5B115DAA4C4004C6398 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		221CB5B515DAA4C4004C6398 /* ECConfigIOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ECConfigIOS-Info.plist"; sourceTree = "<group>"; };
-		221CB5B715DAA4C4004C6398 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		221CB5B915DAA4C4004C6398 /* ECConfigIOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ECConfigIOS-Prefix.pch"; sourceTree = "<group>"; };
 		221CB5BD15DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECIOSFrameworkDebug.xcconfig; sourceTree = "<group>"; };
 		221CB5BE15DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECIOSFrameworkRelease.xcconfig; sourceTree = "<group>"; };
 		2251BA4715DBCDA800F2FE40 /* ECMacFramework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECMacFramework.xcconfig; sourceTree = "<group>"; };
@@ -119,7 +116,6 @@
 			children = (
 				2251BA4F15DBD03A00F2FE40 /* Source */,
 				221CB54D15DA9883004C6398 /* Resources */,
-				221CB5B315DAA4C4004C6398 /* ECConfigIOS */,
 				221CB53015DA9816004C6398 /* Frameworks */,
 				221CB52F15DA9816004C6398 /* Products */,
 			);
@@ -194,24 +190,6 @@
 				221CB5CE15DAA93D004C6398 /* Mac */,
 			);
 			path = Configuration;
-			sourceTree = "<group>";
-		};
-		221CB5B315DAA4C4004C6398 /* ECConfigIOS */ = {
-			isa = PBXGroup;
-			children = (
-				221CB5B415DAA4C4004C6398 /* Supporting Files */,
-			);
-			path = ECConfigIOS;
-			sourceTree = "<group>";
-		};
-		221CB5B415DAA4C4004C6398 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				221CB5B515DAA4C4004C6398 /* ECConfigIOS-Info.plist */,
-				221CB5B615DAA4C4004C6398 /* InfoPlist.strings */,
-				221CB5B915DAA4C4004C6398 /* ECConfigIOS-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		221CB5CD15DAA933004C6398 /* iOS */ = {
@@ -415,14 +393,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				221CB54F15DA9883004C6398 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		221CB5B615DAA4C4004C6398 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				221CB5B715DAA4C4004C6398 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
