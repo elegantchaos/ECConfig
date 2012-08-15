@@ -12,4 +12,5 @@ FRAMEWORK_VERSION = A
 INFOPLIST_FILE = Resources/Info.plist
 PRODUCT_NAME = $(PROJECT_NAME)
 WRAPPER_EXTENSION = framework
-INSTALL_PATH = @executable_path/../Frameworks
+//INSTALL_PATH = @executable_path/../Frameworks
+INSTALL_PATH = @rpath
