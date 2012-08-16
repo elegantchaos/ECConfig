@@ -7,4 +7,4 @@ This includes:
 
 - [standard xcconfig files](Standard XCConfigs)
 - [standard precompiled header files](Standard PCH Files)
-- [helper scripts for building](Standard Scripts)
+- [helper scripts for building](Standard%20Scripts)
