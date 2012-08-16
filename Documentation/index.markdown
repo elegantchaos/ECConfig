@@ -5,6 +5,8 @@ the other Elegant Chaos libraries.
 
 This includes:
 
-- standard xcconfig files
-- standard precompiled header files
-- helper scripts for building
+- Standard XCConfigs
+- Standard PCH Files
+- Standard Scripts
+
+See the programming guides below for more information.
