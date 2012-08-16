@@ -90,6 +90,7 @@
 		2251BA4915DBCDA800F2FE40 /* ECMacFrameworkDebug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECMacFrameworkDebug.xcconfig; sourceTree = "<group>"; };
 		22BC8E3815DAB90300132883 /* ECUnitTests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECUnitTests.xcconfig; sourceTree = "<group>"; };
 		22BC8E3E15DAB9FC00132883 /* package-pseudo-framework.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "package-pseudo-framework.sh"; sourceTree = "<group>"; };
+		22DC789115DDA739009B98DD /* Documentation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Documentation; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				221CB57715DA993E004C6398 /* Configuration */,
+				22DC789115DDA739009B98DD /* Documentation */,
 				221CB54915DA9883004C6398 /* Generic */,
 				221CB56315DA98ED004C6398 /* Prefix */,
 			);

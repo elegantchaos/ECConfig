@@ -6,14 +6,10 @@
 
 #import <Foundation/Foundation.h>
 
-/** Standard configurations and prefix files.
+/** 
+ * Currently a placeholder.
  *
- * The ECConfig framework doesn't actually contain any code at the moment.
- *
- * Instead, it's a standard place used to store:
- *
- * - standard xcconfig files
- * - standard precompiled header files
+ * This framework is simply used to store xcconfigs, pch files, and scripts.
  */
 
 @interface ECConfig : NSObject
