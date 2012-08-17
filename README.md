@@ -5,12 +5,12 @@ the other Elegant Chaos libraries.
 
 This includes:
 
-- Standard XCConfigs
+- Standard Configs
 - Standard Prefixes
 - Standard Scripts
 
-All of these are arranged on the assumption that client projects will be organised to conform to a standard [pattern](Organisation). 
+All of these are arranged on the assumption that client projects have a standard Organisation. 
 
 Arranging your own project to use this pattern isn't essential, but if you use a different one you may have to modify some examples accordingly.
 
-See the programming guides in the online documentation for more information.
+See the programming guides in the documentation for more information.
