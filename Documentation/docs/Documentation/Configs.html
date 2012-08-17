@@ -27,7 +27,7 @@
 				<div id="container">	
 					<h1>Configuration Files</h1>
 
-<p><a href="../../Classes/ECConfig.html">ECConfig</a> contains some standard Xcode configuration files.</p>
+<p>ECConfig contains some standard Xcode configuration files.</p>
 
 <p>These help to ensure that all of the EC frameworks are built with the same settings.</p>
 
@@ -37,7 +37,7 @@
 
 <h2>Organisation</h2>
 
-<h3>Core <a href="Configs.html">Configs</a></h3>
+<h3>Core Configs</h3>
 
 <p>The files are layered. At the bottom are the core configs. These are typically included by other configs, so you don&rsquo;t need to include them directly.</p>
 
@@ -60,7 +60,7 @@
 
 <p>This defines settings that <em>all</em> projects should have.</p>
 
-<h3>Platform <a href="Configs.html">Configs</a></h3>
+<h3>Platform Configs</h3>
 
 <p>The next layer consists of per-platform configs. These are typically the ones that you&rsquo;ll actually include:</p>
 
@@ -82,7 +82,7 @@
 
 <p>These shared files define settings to be shared by both the Debug and Release configurations on each platform.</p>
 
-<h3>Mix-in <a href="Configs.html">Configs</a></h3>
+<h3>Mix-in Configs</h3>
 
 <p>In addition there are some &ldquo;mix-in&rdquo; configs that can be included. These typically define the standard settings required for different kinds of target &ndash; eg frameworks, applications, unit tests.</p>
 
@@ -111,7 +111,7 @@
 <pre><code>ECMacDebug.xcconfig line 8: Unable to find included file...
 </code></pre>
 
-<p>You can fix this by adding a symbolic link called <a href="../../Classes/ECConfig.html">ECConfig</a> that points to the right place.</p>
+<p>You can fix this by adding a symbolic link called ECConfig that points to the right place.</p>
 				</div>
 				<div id="footer">
 					<hr />
