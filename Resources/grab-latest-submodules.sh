@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
 
-git submodule foreach 'git fetch; git rebase origin/master'
+base=`dirname $0`
+pushd "$base" > /dev/null
+full="$PWD"
+popd > /dev/null
+
+git submodule foreach "\"$full\"/grab-latest.sh"
