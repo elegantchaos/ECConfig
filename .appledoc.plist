@@ -10,5 +10,11 @@
 	<array>
 		<string>README.md</string>
 	</array>
+	<key>--logformat</key>
+	<string>xcode</string>
+	<key>--exit-threshold</key>
+	<integer>2</integer>
+	<key>--explicit-crossref</key>
+	<true/>
 </dict>
 </plist>
