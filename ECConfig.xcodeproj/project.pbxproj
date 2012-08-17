@@ -20,8 +20,6 @@
 		221CB59015DA9B14004C6398 /* ECMacShared.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57E15DA993E004C6398 /* ECMacShared.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB59115DA9B14004C6398 /* ECRelease.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57F15DA993E004C6398 /* ECRelease.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB59215DA9B14004C6398 /* ECShared.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB58015DA993E004C6398 /* ECShared.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB5C015DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB5BD15DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB5C215DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB5BE15DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB5D015DAAFE2004C6398 /* ECDebug.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57815DA993E004C6398 /* ECDebug.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB5D115DAAFE2004C6398 /* ECRelease.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57F15DA993E004C6398 /* ECRelease.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB5D215DAAFE2004C6398 /* ECShared.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB58015DA993E004C6398 /* ECShared.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,9 +30,7 @@
 		221CB5DB15DAB038004C6398 /* Debug.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56515DA98ED004C6398 /* Debug.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB5DC15DAB038004C6398 /* Release.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56615DA98ED004C6398 /* Release.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB5DD15DAB038004C6398 /* Shared.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56715DA98ED004C6398 /* Shared.pch */; settings = {ATTRIBUTES = (Public, ); }; };
-		2251BA4A15DBCDA800F2FE40 /* ECMacFramework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2251BA4715DBCDA800F2FE40 /* ECMacFramework.xcconfig */; };
-		2251BA4B15DBCDA800F2FE40 /* ECMacFrameworkRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2251BA4815DBCDA800F2FE40 /* ECMacFrameworkRelease.xcconfig */; };
-		2251BA4C15DBCDA800F2FE40 /* ECMacFrameworkDebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2251BA4915DBCDA800F2FE40 /* ECMacFrameworkDebug.xcconfig */; };
+		2251BA4A15DBCDA800F2FE40 /* ECFramework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2251BA4715DBCDA800F2FE40 /* ECFramework.xcconfig */; };
 		226153A215DAD312006783C3 /* ECConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CB54C15DA9883004C6398 /* ECConfig.m */; };
 		226153A315DAD31F006783C3 /* ECConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 221CB54B15DA9883004C6398 /* ECConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22BC8E3C15DAB92E00132883 /* ECUnitTests.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 22BC8E3815DAB90300132883 /* ECUnitTests.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -81,15 +77,11 @@
 		221CB57F15DA993E004C6398 /* ECRelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECRelease.xcconfig; sourceTree = "<group>"; };
 		221CB58015DA993E004C6398 /* ECShared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECShared.xcconfig; sourceTree = "<group>"; };
 		221CB5A915DAA41E004C6398 /* ECPseudoFramework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECPseudoFramework.xcconfig; sourceTree = "<group>"; };
-		221CB5B015DAA4C4004C6398 /* ECConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		221CB5B015DAA4C4004C6398 /* .bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = .bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		221CB5B115DAA4C4004C6398 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		221CB5BD15DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECIOSFrameworkDebug.xcconfig; sourceTree = "<group>"; };
-		221CB5BE15DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECIOSFrameworkRelease.xcconfig; sourceTree = "<group>"; };
 		2237934D15DE9E3E00750616 /* .appledoc.plist */ = {isa = PBXFileReference; lastKnownFileType = file; path = .appledoc.plist; sourceTree = "<group>"; };
-		2237934E15DE9E7F00750616 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		2251BA4715DBCDA800F2FE40 /* ECMacFramework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECMacFramework.xcconfig; sourceTree = "<group>"; };
-		2251BA4815DBCDA800F2FE40 /* ECMacFrameworkRelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECMacFrameworkRelease.xcconfig; sourceTree = "<group>"; };
-		2251BA4915DBCDA800F2FE40 /* ECMacFrameworkDebug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECMacFrameworkDebug.xcconfig; sourceTree = "<group>"; };
+		2237934E15DE9E7F00750616 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; wrapsLines = 1; };
+		2251BA4715DBCDA800F2FE40 /* ECFramework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECFramework.xcconfig; sourceTree = "<group>"; };
 		22BC8E3815DAB90300132883 /* ECUnitTests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECUnitTests.xcconfig; sourceTree = "<group>"; };
 		22BC8E3E15DAB9FC00132883 /* package-pseudo-framework.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "package-pseudo-framework.sh"; sourceTree = "<group>"; };
 		22DC789115DDA739009B98DD /* Documentation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Documentation; sourceTree = SOURCE_ROOT; };
@@ -129,7 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				221CB52E15DA9816004C6398 /* ECConfig.framework */,
-				221CB5B015DAA4C4004C6398 /* ECConfig.framework */,
+				221CB5B015DAA4C4004C6398 /* .bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,10 +178,8 @@
 		221CB57715DA993E004C6398 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				221CB57815DA993E004C6398 /* ECDebug.xcconfig */,
-				221CB57F15DA993E004C6398 /* ECRelease.xcconfig */,
-				221CB58015DA993E004C6398 /* ECShared.xcconfig */,
-				22BC8E3815DAB90300132883 /* ECUnitTests.xcconfig */,
+				2237935015DEA44900750616 /* Core */,
+				2237935115DEA47700750616 /* Mix-In */,
 				221CB5CD15DAA933004C6398 /* iOS */,
 				221CB5CE15DAA93D004C6398 /* Mac */,
 			);
@@ -199,9 +189,6 @@
 		221CB5CD15DAA933004C6398 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				221CB5BD15DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig */,
-				221CB5BE15DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig */,
-				221CB5A915DAA41E004C6398 /* ECPseudoFramework.xcconfig */,
 				221CB57915DA993E004C6398 /* ECIOSDebug.xcconfig */,
 				221CB57A15DA993E004C6398 /* ECIOSRelease.xcconfig */,
 				221CB57B15DA993E004C6398 /* ECIOSShared.xcconfig */,
@@ -215,9 +202,6 @@
 				221CB57C15DA993E004C6398 /* ECMacDebug.xcconfig */,
 				221CB57D15DA993E004C6398 /* ECMacRelease.xcconfig */,
 				221CB57E15DA993E004C6398 /* ECMacShared.xcconfig */,
-				2251BA4715DBCDA800F2FE40 /* ECMacFramework.xcconfig */,
-				2251BA4815DBCDA800F2FE40 /* ECMacFrameworkRelease.xcconfig */,
-				2251BA4915DBCDA800F2FE40 /* ECMacFrameworkDebug.xcconfig */,
 			);
 			name = Mac;
 			sourceTree = "<group>";
@@ -230,6 +214,26 @@
 				22DC789115DDA739009B98DD /* Documentation */,
 			);
 			name = Documentation;
+			sourceTree = "<group>";
+		};
+		2237935015DEA44900750616 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				221CB57815DA993E004C6398 /* ECDebug.xcconfig */,
+				221CB57F15DA993E004C6398 /* ECRelease.xcconfig */,
+				221CB58015DA993E004C6398 /* ECShared.xcconfig */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		2237935115DEA47700750616 /* Mix-In */ = {
+			isa = PBXGroup;
+			children = (
+				22BC8E3815DAB90300132883 /* ECUnitTests.xcconfig */,
+				221CB5A915DAA41E004C6398 /* ECPseudoFramework.xcconfig */,
+				2251BA4715DBCDA800F2FE40 /* ECFramework.xcconfig */,
+			);
+			name = "Mix-In";
 			sourceTree = "<group>";
 		};
 		2251BA4F15DBD03A00F2FE40 /* Source */ = {
@@ -270,8 +274,6 @@
 				221CB5D015DAAFE2004C6398 /* ECDebug.xcconfig in Headers */,
 				221CB5D115DAAFE2004C6398 /* ECRelease.xcconfig in Headers */,
 				221CB5D215DAAFE2004C6398 /* ECShared.xcconfig in Headers */,
-				221CB5C015DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig in Headers */,
-				221CB5C215DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig in Headers */,
 				221CB5D315DAAFE2004C6398 /* ECPseudoFramework.xcconfig in Headers */,
 				221CB5D415DAAFE2004C6398 /* ECIOSDebug.xcconfig in Headers */,
 				221CB5D515DAAFE2004C6398 /* ECIOSRelease.xcconfig in Headers */,
@@ -321,7 +323,7 @@
 			);
 			name = ECConfigIOS;
 			productName = ECConfigIOS;
-			productReference = 221CB5B015DAA4C4004C6398 /* ECConfig.framework */;
+			productReference = 221CB5B015DAA4C4004C6398 /* .bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -358,9 +360,7 @@
 			files = (
 				221CB55415DA9883004C6398 /* InfoPlist.strings in Resources */,
 				22BC8E3F15DAB9FC00132883 /* package-pseudo-framework.sh in Resources */,
-				2251BA4A15DBCDA800F2FE40 /* ECMacFramework.xcconfig in Resources */,
-				2251BA4B15DBCDA800F2FE40 /* ECMacFrameworkRelease.xcconfig in Resources */,
-				2251BA4C15DBCDA800F2FE40 /* ECMacFrameworkDebug.xcconfig in Resources */,
+				2251BA4A15DBCDA800F2FE40 /* ECFramework.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +428,6 @@
 		};
 		221CB54415DA9816004C6398 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2251BA4915DBCDA800F2FE40 /* ECMacFrameworkDebug.xcconfig */;
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -440,7 +439,6 @@
 		};
 		221CB54515DA9816004C6398 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2251BA4815DBCDA800F2FE40 /* ECMacFrameworkRelease.xcconfig */;
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -452,7 +450,6 @@
 		};
 		221CB5BB15DAA4C4004C6398 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 221CB5BD15DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Resources/Info.plist;
 			};
@@ -460,7 +457,6 @@
 		};
 		221CB5BC15DAA4C4004C6398 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 221CB5BE15DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Resources/Info.plist;
 			};
