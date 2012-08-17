@@ -85,6 +85,8 @@
 		221CB5B115DAA4C4004C6398 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		221CB5BD15DAA512004C6398 /* ECIOSFrameworkDebug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECIOSFrameworkDebug.xcconfig; sourceTree = "<group>"; };
 		221CB5BE15DAA512004C6398 /* ECIOSFrameworkRelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECIOSFrameworkRelease.xcconfig; sourceTree = "<group>"; };
+		2237934D15DE9E3E00750616 /* .appledoc.plist */ = {isa = PBXFileReference; lastKnownFileType = file; path = .appledoc.plist; sourceTree = "<group>"; };
+		2237934E15DE9E7F00750616 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		2251BA4715DBCDA800F2FE40 /* ECMacFramework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECMacFramework.xcconfig; sourceTree = "<group>"; };
 		2251BA4815DBCDA800F2FE40 /* ECMacFrameworkRelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECMacFrameworkRelease.xcconfig; sourceTree = "<group>"; };
 		2251BA4915DBCDA800F2FE40 /* ECMacFrameworkDebug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECMacFrameworkDebug.xcconfig; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 		221CB52215DA9816004C6398 = {
 			isa = PBXGroup;
 			children = (
+				2237934B15DE9E1600750616 /* Documentation */,
 				2251BA4F15DBD03A00F2FE40 /* Source */,
 				221CB54D15DA9883004C6398 /* Resources */,
 				221CB53015DA9816004C6398 /* Frameworks */,
@@ -219,11 +222,20 @@
 			name = Mac;
 			sourceTree = "<group>";
 		};
+		2237934B15DE9E1600750616 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				2237934E15DE9E7F00750616 /* README.md */,
+				2237934D15DE9E3E00750616 /* .appledoc.plist */,
+				22DC789115DDA739009B98DD /* Documentation */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
 		2251BA4F15DBD03A00F2FE40 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				221CB57715DA993E004C6398 /* Configuration */,
-				22DC789115DDA739009B98DD /* Documentation */,
 				221CB54915DA9883004C6398 /* Generic */,
 				221CB56315DA98ED004C6398 /* Prefix */,
 			);

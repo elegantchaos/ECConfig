@@ -8,7 +8,7 @@
 	</array>
 	<key>--index-desc</key>
 	<array>
-		<string>Documentation/index.markdown</string>
+		<string>README.md</string>
 	</array>
 </dict>
 </plist>
