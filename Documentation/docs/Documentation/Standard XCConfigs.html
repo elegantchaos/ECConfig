@@ -25,9 +25,84 @@
 			<a title="Standard XCConfigs Document" name="top"></a>
 			<div id="overview_contents" role="main">
 				<div id="container">	
-					<h2>Configuration Files</h2>
+					<h1>Configuration Files</h1>
 
-<p>Config documentation here.</p>
+<p><a href="../../Classes/ECConfig.html">ECConfig</a> contains some standard Xcode configuration files.</p>
+
+<p>These help to ensure that all of the EC frameworks are built with the same settings.</p>
+
+<p>They can also simplify the process of setting up a new project.</p>
+
+<p>Finally, in a sense they serve as a way for me to document the settings that each kind of project needs, since they give a definitive place to put the essential settings!</p>
+
+<h2>Organisation</h2>
+
+<h3>Core Configs</h3>
+
+<p>The files are layered. At the bottom are the core configs. These are typically included by other configs, so you don&rsquo;t need to include them directly.</p>
+
+<p>The bottom layer contains settings for any project.</p>
+
+<p>There are two variations, one for each of the Debug and Release configurations:</p>
+
+<ul>
+<li>ECDebug.xcconfig</li>
+<li>ECRelease.xcconfig</li>
+</ul>
+
+
+<p>These define extra settings to be used by all projects when built in Debug or Release respectively. Both of these also include another file:</p>
+
+<ul>
+<li>ECShared.xcconfig</li>
+</ul>
+
+
+<p>This defines settings that <em>all</em> projects should have.</p>
+
+<h3>Platform Configs</h3>
+
+<p>The next layer consists of per-platform configs. These are typically the ones that you&rsquo;ll actually include:</p>
+
+<ul>
+<li>ECIOSDebug.xcconfig</li>
+<li>ECIOSRelease.xcconfig</li>
+<li>ECMacDebug.xcconfig</li>
+<li>ECMacRelease.xcconfig</li>
+</ul>
+
+
+<p>Again, these also include a shared file for each platform:</p>
+
+<ul>
+<li>ECIOSShared.xcconfig</li>
+<li>ECMacShared.xcconfig</li>
+</ul>
+
+
+<p>These shared files define settings to be shared by both the Debug and Release configurations on each platform.</p>
+
+<h3>Mix-in Configs</h3>
+
+<p>In addition there are some &ldquo;mix-in&rdquo; configs that can be included. These typically define the standard settings required for different kinds of target &ndash; eg frameworks, applications, unit tests.</p>
+
+<h2>Usage</h2>
+
+<p>Annoyingly, Xcode doesn&rsquo;t look in the build products folder when searching for files included in xcconfig files.</p>
+
+<p>This means that we can&rsquo;t include things from the XCConfig framework in a totally portable way, by doing</p>
+
+<pre><code>#include &lt;ECConfig/ECMacDebug.xcconfig&gt;
+</code></pre>
+
+<p>Instead, we have to assume that the framework&rsquo;s source folder is actually at a known relative location.</p>
+
+<p>If this isn&rsquo;t the case, you&rsquo;ll get a build warning:</p>
+
+<pre><code>ECMacDebug.xcconfig line 8: Unable to find included file...
+</code></pre>
+
+<p>You can fix this by adding a symbolic link called <a href="../../Classes/ECConfig.html">ECConfig</a> that points to the right place.</p>
 				</div>
 				<div id="footer">
 					<hr />
