@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>Standard XCConfigs Document</title>
+		<title>Configs Document</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../../css/styles.css" media="all" />
@@ -17,12 +17,12 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode" id="pageTitleHeader">Standard XCConfigs Document</h1>
+				<h1 class="hideInXcode" id="pageTitleHeader">Configs Document</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar"></ul>
 		</header>
 		<article>
-			<a title="Standard XCConfigs Document" name="top"></a>
+			<a title="Configs Document" name="top"></a>
 			<div id="overview_contents" role="main">
 				<div id="container">	
 					<h1>Configuration Files</h1>
@@ -37,7 +37,7 @@
 
 <h2>Organisation</h2>
 
-<h3>Core Configs</h3>
+<h3>Core <a href="Configs.html">Configs</a></h3>
 
 <p>The files are layered. At the bottom are the core configs. These are typically included by other configs, so you don&rsquo;t need to include them directly.</p>
 
@@ -60,7 +60,7 @@
 
 <p>This defines settings that <em>all</em> projects should have.</p>
 
-<h3>Platform Configs</h3>
+<h3>Platform <a href="Configs.html">Configs</a></h3>
 
 <p>The next layer consists of per-platform configs. These are typically the ones that you&rsquo;ll actually include:</p>
 
@@ -82,9 +82,18 @@
 
 <p>These shared files define settings to be shared by both the Debug and Release configurations on each platform.</p>
 
-<h3>Mix-in Configs</h3>
+<h3>Mix-in <a href="Configs.html">Configs</a></h3>
 
 <p>In addition there are some &ldquo;mix-in&rdquo; configs that can be included. These typically define the standard settings required for different kinds of target &ndash; eg frameworks, applications, unit tests.</p>
+
+<p>Current mix-in configs include:</p>
+
+<ul>
+<li>ECUnitTests.xcconfig &mdash; for oncunit unit test bundles</li>
+<li>ECPseudoFramework.xcconfig &mdash; for &lsquo;fake&rsquo; frameworks on iOS</li>
+<li>ECFramework.xcconfig &mdash; for proper frameworks on the Mac</li>
+</ul>
+
 
 <h2>Usage</h2>
 
