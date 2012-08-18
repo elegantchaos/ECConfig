@@ -1,16 +1,16 @@
 // --------------------------------------------------------------------------
 //  Copyright 2012 Sam Deane, Elegant Chaos. All rights reserved.
-//  This source code is distributed under the terms of Elegant Chaos's
+//  This source code is distributed under the terms of Elegant Chaos's 
 //  liberal license: http://www.elegantchaos.com/license/liberal
 // --------------------------------------------------------------------------
 
 /**
- * Standard release definitions.
+ * Standard debug definitions.
  */
 
-#define EC_RELEASE 1
-#define EC_CONFIGURATION_STRING @"Release"
-#define EC_CONFIGURATION_STRING_SHORT @"R"
+#define EC_DEBUG 1
+#define EC_CONFIGURATION_STRING @"Debug"
+#define EC_CONFIGURATION_STRING_SHORT @"D"
 
-#import "Shared.pch"
+#import "ECConfigShared.pch"
 
