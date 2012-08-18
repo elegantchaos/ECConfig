@@ -57,3 +57,9 @@ PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES
 
 WARNING_CFLAGS = -Wall -Wextra -Wno-unused-macros -Wno-unused-parameter
 GCC_TREAT_WARNINGS_AS_ERRORS = YES
+
+// --------------------------------------------------------------------------
+// Custom settings
+// --------------------------------------------------------------------------
+
+ECCONFIG_SCRIPTS_PATH=$(BUILT_PRODUCTS_DIR)/ECConfig.framework/Resources
