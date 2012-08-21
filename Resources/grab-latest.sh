@@ -16,8 +16,8 @@ if [[ "$status" != "" ]]; then
     exit 1
 fi
 
-echo fetching latest revisions
-git fetch
+git rebase develop
+check $? "rebasing on develop"
 
 git checkout -b develop-temp
 check $? "making temp branch"
@@ -25,15 +25,20 @@ check $? "making temp branch"
 git checkout develop
 check $? "switching back to develop"
 
-git rebase develop
-check $? "rebasing on develop"
-
 git merge develop-temp
-check $? "merging changes from temp"
+check $? "merging local changes"
+
+git branch -d develop-temp
+check $? "removing temp branch"
+
+# we should now be on a local develop branch incorporating any local changes
+echo fetching latest revisions
+git fetch
+
+git rebase
+check $? "rebasing on origin/develop"
 
 git push
 check $? "pushing"
 
-git branch -d develop-temp
-check $? "removing temp branch"
 
