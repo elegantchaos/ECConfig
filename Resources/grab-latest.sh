@@ -2,26 +2,31 @@
 
 check() {
     if [[ $1 != 0 ]]; then
-      echo $2
+      echo "failed: $2"
       exit $1
+    else
+        echo $2
     fi
 }
-    
-echo Fetching latest revisions
+
+status=`git status --porcelain`
+
+if [[ "$status" != "" ]]; then
+    echo "You have local changes. Commit them first."
+    exit 1
+fi
+
+echo fetching latest revisions
 git fetch
 
-echo Rebasing on origin/develop
 git checkout -b develop-temp
 check $? "making temp branch"
 
-git rebase develop
-check $? "rebasing on develop"
-
-git rebase
-check $? "rebasing from origin"
-
 git checkout develop
 check $? "switching back to develop"
+
+git rebase develop
+check $? "rebasing on develop"
 
 git merge develop-temp
 check $? "merging changes from temp"
