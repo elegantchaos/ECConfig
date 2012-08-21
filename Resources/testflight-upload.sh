@@ -17,7 +17,8 @@ GIT=/usr/bin/git
 
 APITOKEN=`defaults read com.elegantchaos.testflight-upload API_TOKEN`
 if [[ "${APITOKEN}" == "" ]]; then
-    echo "Need to set the TestFlight API token using 'defaults write com.elegantchaos.testflight-upload API_TOKEN <token>'" >> "${LOG}"
+    echo "Need to set the TestFlight API token using 'defaults write com.elegantchaos.testflight-upload API_TOKEN <token>'" >> "${ERROR_LOG}"
+    open "${ERROR_LOG}"
     exit 1
 fi
 
