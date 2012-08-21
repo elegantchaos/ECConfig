@@ -35,12 +35,12 @@
 		226153A315DAD31F006783C3 /* ECConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 221CB54B15DA9883004C6398 /* ECConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22818A1515E39D6C0005406B /* update-version.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22818A1115E39D6C0005406B /* update-version.sh */; };
 		22818A1615E39D6C0005406B /* backup-submodules.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22818A1215E39D6C0005406B /* backup-submodules.sh */; };
-		22818A1715E39D6C0005406B /* grab-latest-submodules.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22818A1315E39D6C0005406B /* grab-latest-submodules.sh */; };
-		22818A1815E39D6C0005406B /* grab-latest.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22818A1415E39D6C0005406B /* grab-latest.sh */; };
+		22818A1715E39D6C0005406B /* merge-latest-submodules.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22818A1315E39D6C0005406B /* merge-latest-submodules.sh */; };
+		22818A1815E39D6C0005406B /* merge-latest.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22818A1415E39D6C0005406B /* merge-latest.sh */; };
 		22818A1A15E39DB30005406B /* update-version.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22818A1115E39D6C0005406B /* update-version.sh */; };
 		22818A1B15E39DB30005406B /* backup-submodules.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22818A1215E39D6C0005406B /* backup-submodules.sh */; };
-		22818A1C15E39DB30005406B /* grab-latest-submodules.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22818A1315E39D6C0005406B /* grab-latest-submodules.sh */; };
-		22818A1D15E39DB30005406B /* grab-latest.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22818A1415E39D6C0005406B /* grab-latest.sh */; };
+		22818A1C15E39DB30005406B /* merge-latest-submodules.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22818A1315E39D6C0005406B /* merge-latest-submodules.sh */; };
+		22818A1D15E39DB30005406B /* merge-latest.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22818A1415E39D6C0005406B /* merge-latest.sh */; };
 		22818A2815E3A1280005406B /* testflight-extract-url.py in Resources */ = {isa = PBXBuildFile; fileRef = 22818A2615E3A1280005406B /* testflight-extract-url.py */; };
 		22818A2915E3A1280005406B /* testflight-upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22818A2715E3A1280005406B /* testflight-upload.sh */; };
 		22818A2A15E3A1340005406B /* testflight-extract-url.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22818A2615E3A1280005406B /* testflight-extract-url.py */; };
@@ -63,8 +63,8 @@
 				22818A2B15E3A1340005406B /* testflight-upload.sh in CopyFiles */,
 				22818A1A15E39DB30005406B /* update-version.sh in CopyFiles */,
 				22818A1B15E39DB30005406B /* backup-submodules.sh in CopyFiles */,
-				22818A1C15E39DB30005406B /* grab-latest-submodules.sh in CopyFiles */,
-				22818A1D15E39DB30005406B /* grab-latest.sh in CopyFiles */,
+				22818A1C15E39DB30005406B /* merge-latest-submodules.sh in CopyFiles */,
+				22818A1D15E39DB30005406B /* merge-latest.sh in CopyFiles */,
 				22BC8E4315DABAB300132883 /* package-pseudo-framework.sh in CopyFiles */,
 				22BC8E4415DABAB300132883 /* InfoPlist.strings in CopyFiles */,
 			);
@@ -104,8 +104,8 @@
 		2251BA4715DBCDA800F2FE40 /* ECFramework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECFramework.xcconfig; sourceTree = "<group>"; };
 		22818A1115E39D6C0005406B /* update-version.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "update-version.sh"; sourceTree = "<group>"; };
 		22818A1215E39D6C0005406B /* backup-submodules.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "backup-submodules.sh"; sourceTree = "<group>"; };
-		22818A1315E39D6C0005406B /* grab-latest-submodules.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "grab-latest-submodules.sh"; sourceTree = "<group>"; };
-		22818A1415E39D6C0005406B /* grab-latest.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "grab-latest.sh"; sourceTree = "<group>"; };
+		22818A1315E39D6C0005406B /* merge-latest-submodules.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "merge-latest-submodules.sh"; sourceTree = "<group>"; };
+		22818A1415E39D6C0005406B /* merge-latest.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "merge-latest.sh"; sourceTree = "<group>"; };
 		22818A2615E3A1280005406B /* testflight-extract-url.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "testflight-extract-url.py"; sourceTree = "<group>"; };
 		22818A2715E3A1280005406B /* testflight-upload.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "testflight-upload.sh"; sourceTree = "<group>"; };
 		228614E915DEB746000D74EB /* ECConfigIOSDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ECConfigIOSDebug.xcconfig; sourceTree = "<group>"; };
@@ -192,8 +192,8 @@
 				22818A2715E3A1280005406B /* testflight-upload.sh */,
 				22818A1115E39D6C0005406B /* update-version.sh */,
 				22818A1215E39D6C0005406B /* backup-submodules.sh */,
-				22818A1315E39D6C0005406B /* grab-latest-submodules.sh */,
-				22818A1415E39D6C0005406B /* grab-latest.sh */,
+				22818A1315E39D6C0005406B /* merge-latest-submodules.sh */,
+				22818A1415E39D6C0005406B /* merge-latest.sh */,
 				22BC8E3E15DAB9FC00132883 /* package-pseudo-framework.sh */,
 				221CB54E15DA9883004C6398 /* InfoPlist.strings */,
 				221CB55015DA9883004C6398 /* Info.plist */,
@@ -413,8 +413,8 @@
 				2251BA4A15DBCDA800F2FE40 /* ECFramework.xcconfig in Resources */,
 				22818A1515E39D6C0005406B /* update-version.sh in Resources */,
 				22818A1615E39D6C0005406B /* backup-submodules.sh in Resources */,
-				22818A1715E39D6C0005406B /* grab-latest-submodules.sh in Resources */,
-				22818A1815E39D6C0005406B /* grab-latest.sh in Resources */,
+				22818A1715E39D6C0005406B /* merge-latest-submodules.sh in Resources */,
+				22818A1815E39D6C0005406B /* merge-latest.sh in Resources */,
 				22818A2815E3A1280005406B /* testflight-extract-url.py in Resources */,
 				22818A2915E3A1280005406B /* testflight-upload.sh in Resources */,
 			);
