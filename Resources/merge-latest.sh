@@ -4,8 +4,6 @@ check() {
     if [[ $1 != 0 ]]; then
       echo "failed: $2"
       exit $1
-    else
-        echo $2
     fi
 }
 
@@ -16,8 +14,15 @@ if [[ "$status" != "" ]]; then
     exit 1
 fi
 
+# we may start on something that isn't the develop branch
+# possibly a detached HEAD
+
+# try to apply any changes on top of our local develop
+
 git rebase develop
 check $? "rebasing on develop"
+
+# now fast forward develop to the merged place
 
 git checkout -b develop-temp
 check $? "making temp branch"
@@ -35,8 +40,12 @@ check $? "removing temp branch"
 echo fetching latest revisions
 git fetch
 
+# try to rebase again on top of any remote changes
+
 git rebase
 check $? "rebasing on origin/develop"
+
+# if that worked, push back the merged version
 
 git push
 check $? "pushing"

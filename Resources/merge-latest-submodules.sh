@@ -5,4 +5,4 @@ pushd "$base" > /dev/null
 full="$PWD"
 popd > /dev/null
 
-git submodule foreach "\"$full\"/grab-latest.sh"
+git submodule foreach "\"$full\"/merge-latest.sh"
