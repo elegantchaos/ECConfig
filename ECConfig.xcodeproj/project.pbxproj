@@ -41,6 +41,10 @@
 		22818A1B15E39DB30005406B /* backup-submodules.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22818A1215E39D6C0005406B /* backup-submodules.sh */; };
 		22818A1C15E39DB30005406B /* grab-latest-submodules.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22818A1315E39D6C0005406B /* grab-latest-submodules.sh */; };
 		22818A1D15E39DB30005406B /* grab-latest.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22818A1415E39D6C0005406B /* grab-latest.sh */; };
+		22818A2815E3A1280005406B /* testflight-extract-url.py in Resources */ = {isa = PBXBuildFile; fileRef = 22818A2615E3A1280005406B /* testflight-extract-url.py */; };
+		22818A2915E3A1280005406B /* testflight-upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22818A2715E3A1280005406B /* testflight-upload.sh */; };
+		22818A2A15E3A1340005406B /* testflight-extract-url.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22818A2615E3A1280005406B /* testflight-extract-url.py */; };
+		22818A2B15E3A1340005406B /* testflight-upload.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22818A2715E3A1280005406B /* testflight-upload.sh */; };
 		22BC8E3C15DAB92E00132883 /* ECUnitTests.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 22BC8E3815DAB90300132883 /* ECUnitTests.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		22BC8E3D15DAB93C00132883 /* ECUnitTests.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 22BC8E3815DAB90300132883 /* ECUnitTests.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		22BC8E3F15DAB9FC00132883 /* package-pseudo-framework.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22BC8E3E15DAB9FC00132883 /* package-pseudo-framework.sh */; };
@@ -55,6 +59,8 @@
 			dstPath = "$(RESOURCES_FOLDER_PATH)";
 			dstSubfolderSpec = 16;
 			files = (
+				22818A2A15E3A1340005406B /* testflight-extract-url.py in CopyFiles */,
+				22818A2B15E3A1340005406B /* testflight-upload.sh in CopyFiles */,
 				22818A1A15E39DB30005406B /* update-version.sh in CopyFiles */,
 				22818A1B15E39DB30005406B /* backup-submodules.sh in CopyFiles */,
 				22818A1C15E39DB30005406B /* grab-latest-submodules.sh in CopyFiles */,
@@ -100,6 +106,8 @@
 		22818A1215E39D6C0005406B /* backup-submodules.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "backup-submodules.sh"; sourceTree = "<group>"; };
 		22818A1315E39D6C0005406B /* grab-latest-submodules.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "grab-latest-submodules.sh"; sourceTree = "<group>"; };
 		22818A1415E39D6C0005406B /* grab-latest.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "grab-latest.sh"; sourceTree = "<group>"; };
+		22818A2615E3A1280005406B /* testflight-extract-url.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "testflight-extract-url.py"; sourceTree = "<group>"; };
+		22818A2715E3A1280005406B /* testflight-upload.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "testflight-upload.sh"; sourceTree = "<group>"; };
 		228614E915DEB746000D74EB /* ECConfigIOSDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ECConfigIOSDebug.xcconfig; sourceTree = "<group>"; };
 		228614EA15DEB746000D74EB /* ECConfigIOSRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ECConfigIOSRelease.xcconfig; sourceTree = "<group>"; };
 		228614EB15DEB746000D74EB /* ECConfigMacDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ECConfigMacDebug.xcconfig; sourceTree = "<group>"; };
@@ -180,6 +188,8 @@
 		221CB54D15DA9883004C6398 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				22818A2615E3A1280005406B /* testflight-extract-url.py */,
+				22818A2715E3A1280005406B /* testflight-upload.sh */,
 				22818A1115E39D6C0005406B /* update-version.sh */,
 				22818A1215E39D6C0005406B /* backup-submodules.sh */,
 				22818A1315E39D6C0005406B /* grab-latest-submodules.sh */,
@@ -405,6 +415,8 @@
 				22818A1615E39D6C0005406B /* backup-submodules.sh in Resources */,
 				22818A1715E39D6C0005406B /* grab-latest-submodules.sh in Resources */,
 				22818A1815E39D6C0005406B /* grab-latest.sh in Resources */,
+				22818A2815E3A1280005406B /* testflight-extract-url.py in Resources */,
+				22818A2915E3A1280005406B /* testflight-upload.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
