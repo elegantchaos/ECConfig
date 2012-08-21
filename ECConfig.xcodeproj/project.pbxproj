@@ -452,7 +452,6 @@
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				INFOPLIST_FILE = Resources/Info.plist;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -464,7 +463,6 @@
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				INFOPLIST_FILE = Resources/Info.plist;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -474,7 +472,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 228614E915DEB746000D74EB /* ECConfigIOSDebug.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = Resources/Info.plist;
 			};
 			name = Debug;
 		};
@@ -482,7 +479,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 228614EA15DEB746000D74EB /* ECConfigIOSRelease.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = Resources/Info.plist;
 			};
 			name = Release;
 		};
