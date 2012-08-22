@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22114AA715E4FFC900CE0D43 /* sign-bundled.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22114AA615E4FFC900CE0D43 /* sign-bundled.sh */; };
+		22114AA915E4FFE100CE0D43 /* sign-bundled.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22114AA615E4FFC900CE0D43 /* sign-bundled.sh */; };
 		221CB53215DA9816004C6398 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221CB53115DA9816004C6398 /* Cocoa.framework */; };
 		221CB55215DA9883004C6398 /* ECConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 221CB54B15DA9883004C6398 /* ECConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB55315DA9883004C6398 /* ECConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CB54C15DA9883004C6398 /* ECConfig.m */; };
@@ -66,6 +68,7 @@
 				22818A1C15E39DB30005406B /* merge-latest-submodules.sh in CopyFiles */,
 				22818A1D15E39DB30005406B /* merge-latest.sh in CopyFiles */,
 				22BC8E4315DABAB300132883 /* package-pseudo-framework.sh in CopyFiles */,
+				22114AA915E4FFE100CE0D43 /* sign-bundled.sh in CopyFiles */,
 				22BC8E4415DABAB300132883 /* InfoPlist.strings in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,6 +76,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		22114AA615E4FFC900CE0D43 /* sign-bundled.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "sign-bundled.sh"; sourceTree = "<group>"; };
 		221CB52E15DA9816004C6398 /* ECConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ECConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		221CB53115DA9816004C6398 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		221CB53415DA9816004C6398 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -192,6 +196,7 @@
 				22818A2715E3A1280005406B /* testflight-upload.sh */,
 				22818A1115E39D6C0005406B /* update-version.sh */,
 				22818A1215E39D6C0005406B /* backup-submodules.sh */,
+				22114AA615E4FFC900CE0D43 /* sign-bundled.sh */,
 				22818A1315E39D6C0005406B /* merge-latest-submodules.sh */,
 				22818A1415E39D6C0005406B /* merge-latest.sh */,
 				22BC8E3E15DAB9FC00132883 /* package-pseudo-framework.sh */,
@@ -417,6 +422,7 @@
 				22818A1815E39D6C0005406B /* merge-latest.sh in Resources */,
 				22818A2815E3A1280005406B /* testflight-extract-url.py in Resources */,
 				22818A2915E3A1280005406B /* testflight-upload.sh in Resources */,
+				22114AA715E4FFC900CE0D43 /* sign-bundled.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
