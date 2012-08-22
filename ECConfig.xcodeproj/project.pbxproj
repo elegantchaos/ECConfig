@@ -16,23 +16,9 @@
 		221CB57415DA98ED004C6398 /* ECConfigDebug.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56515DA98ED004C6398 /* ECConfigDebug.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB57515DA98ED004C6398 /* ECConfigRelease.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56615DA98ED004C6398 /* ECConfigRelease.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB57615DA98ED004C6398 /* ECConfigShared.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56715DA98ED004C6398 /* ECConfigShared.pch */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB58A15DA9B0A004C6398 /* ECDebug.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57815DA993E004C6398 /* ECDebug.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB58E15DA9B14004C6398 /* ECMacDebug.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57C15DA993E004C6398 /* ECMacDebug.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB58F15DA9B14004C6398 /* ECMacRelease.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57D15DA993E004C6398 /* ECMacRelease.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB59015DA9B14004C6398 /* ECMacShared.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57E15DA993E004C6398 /* ECMacShared.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB59115DA9B14004C6398 /* ECRelease.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57F15DA993E004C6398 /* ECRelease.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB59215DA9B14004C6398 /* ECShared.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB58015DA993E004C6398 /* ECShared.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB5D015DAAFE2004C6398 /* ECDebug.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57815DA993E004C6398 /* ECDebug.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB5D115DAAFE2004C6398 /* ECRelease.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57F15DA993E004C6398 /* ECRelease.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB5D215DAAFE2004C6398 /* ECShared.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB58015DA993E004C6398 /* ECShared.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB5D315DAAFE2004C6398 /* ECPseudoFramework.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB5A915DAA41E004C6398 /* ECPseudoFramework.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB5D415DAAFE2004C6398 /* ECIOSDebug.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57915DA993E004C6398 /* ECIOSDebug.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB5D515DAAFE2004C6398 /* ECIOSRelease.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57A15DA993E004C6398 /* ECIOSRelease.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
-		221CB5D615DAAFE2004C6398 /* ECIOSShared.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 221CB57B15DA993E004C6398 /* ECIOSShared.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB5DB15DAB038004C6398 /* ECConfigDebug.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56515DA98ED004C6398 /* ECConfigDebug.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB5DC15DAB038004C6398 /* ECConfigRelease.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56615DA98ED004C6398 /* ECConfigRelease.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB5DD15DAB038004C6398 /* ECConfigShared.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56715DA98ED004C6398 /* ECConfigShared.pch */; settings = {ATTRIBUTES = (Public, ); }; };
-		2251BA4A15DBCDA800F2FE40 /* ECFramework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2251BA4715DBCDA800F2FE40 /* ECFramework.xcconfig */; };
 		226153A215DAD312006783C3 /* ECConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CB54C15DA9883004C6398 /* ECConfig.m */; };
 		226153A315DAD31F006783C3 /* ECConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 221CB54B15DA9883004C6398 /* ECConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22818A1515E39D6C0005406B /* update-version.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22818A1115E39D6C0005406B /* update-version.sh */; };
@@ -47,8 +33,6 @@
 		22818A2915E3A1280005406B /* testflight-upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22818A2715E3A1280005406B /* testflight-upload.sh */; };
 		22818A2A15E3A1340005406B /* testflight-extract-url.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22818A2615E3A1280005406B /* testflight-extract-url.py */; };
 		22818A2B15E3A1340005406B /* testflight-upload.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22818A2715E3A1280005406B /* testflight-upload.sh */; };
-		22BC8E3C15DAB92E00132883 /* ECUnitTests.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 22BC8E3815DAB90300132883 /* ECUnitTests.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
-		22BC8E3D15DAB93C00132883 /* ECUnitTests.xcconfig in Headers */ = {isa = PBXBuildFile; fileRef = 22BC8E3815DAB90300132883 /* ECUnitTests.xcconfig */; settings = {ATTRIBUTES = (Public, ); }; };
 		22BC8E3F15DAB9FC00132883 /* package-pseudo-framework.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22BC8E3E15DAB9FC00132883 /* package-pseudo-framework.sh */; };
 		22BC8E4315DABAB300132883 /* package-pseudo-framework.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22BC8E3E15DAB9FC00132883 /* package-pseudo-framework.sh */; };
 		22BC8E4415DABAB300132883 /* InfoPlist.strings in CopyFiles */ = {isa = PBXBuildFile; fileRef = 221CB54E15DA9883004C6398 /* InfoPlist.strings */; };
@@ -312,13 +296,6 @@
 				221CB57415DA98ED004C6398 /* ECConfigDebug.pch in Headers */,
 				221CB57515DA98ED004C6398 /* ECConfigRelease.pch in Headers */,
 				221CB57615DA98ED004C6398 /* ECConfigShared.pch in Headers */,
-				221CB58A15DA9B0A004C6398 /* ECDebug.xcconfig in Headers */,
-				221CB59115DA9B14004C6398 /* ECRelease.xcconfig in Headers */,
-				221CB59215DA9B14004C6398 /* ECShared.xcconfig in Headers */,
-				221CB58E15DA9B14004C6398 /* ECMacDebug.xcconfig in Headers */,
-				221CB58F15DA9B14004C6398 /* ECMacRelease.xcconfig in Headers */,
-				221CB59015DA9B14004C6398 /* ECMacShared.xcconfig in Headers */,
-				22BC8E3D15DAB93C00132883 /* ECUnitTests.xcconfig in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,14 +303,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				221CB5D015DAAFE2004C6398 /* ECDebug.xcconfig in Headers */,
-				221CB5D115DAAFE2004C6398 /* ECRelease.xcconfig in Headers */,
-				221CB5D215DAAFE2004C6398 /* ECShared.xcconfig in Headers */,
-				221CB5D315DAAFE2004C6398 /* ECPseudoFramework.xcconfig in Headers */,
-				221CB5D415DAAFE2004C6398 /* ECIOSDebug.xcconfig in Headers */,
-				221CB5D515DAAFE2004C6398 /* ECIOSRelease.xcconfig in Headers */,
-				221CB5D615DAAFE2004C6398 /* ECIOSShared.xcconfig in Headers */,
-				22BC8E3C15DAB92E00132883 /* ECUnitTests.xcconfig in Headers */,
 				221CB5DB15DAB038004C6398 /* ECConfigDebug.pch in Headers */,
 				221CB5DC15DAB038004C6398 /* ECConfigRelease.pch in Headers */,
 				221CB5DD15DAB038004C6398 /* ECConfigShared.pch in Headers */,
@@ -387,7 +356,7 @@
 		221CB52415DA9816004C6398 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Elegant Chaos";
 			};
 			buildConfigurationList = 221CB52715DA9816004C6398 /* Build configuration list for PBXProject "ECConfig" */;
@@ -415,7 +384,6 @@
 			files = (
 				221CB55415DA9883004C6398 /* InfoPlist.strings in Resources */,
 				22BC8E3F15DAB9FC00132883 /* package-pseudo-framework.sh in Resources */,
-				2251BA4A15DBCDA800F2FE40 /* ECFramework.xcconfig in Resources */,
 				22818A1515E39D6C0005406B /* update-version.sh in Resources */,
 				22818A1615E39D6C0005406B /* backup-submodules.sh in Resources */,
 				22818A1715E39D6C0005406B /* merge-latest-submodules.sh in Resources */,
@@ -492,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 228614EB15DEB746000D74EB /* ECConfigMacDebug.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
@@ -503,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 228614EC15DEB746000D74EB /* ECConfigMacRelease.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
