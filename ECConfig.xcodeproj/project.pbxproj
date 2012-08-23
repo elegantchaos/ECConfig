@@ -306,7 +306,7 @@
 				221CB52B15DA9816004C6398 /* Headers */,
 				221CB52C15DA9816004C6398 /* Resources */,
 				22F08F4C15E65848003E8456 /* CopyFiles */,
-				22F08F5015E65949003E8456 /* ShellScript */,
+				2281035415E6628D00CBD9D3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -376,21 +376,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		22BC8E4115DABA0E00132883 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "Scripts/package-pseudo-framework.sh\necho \"${VERSION_FOLDER_PATH}\"\nln -s \"Versions/${FRAMEWORK_VERSION}/Scripts\" \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}/Scripts\"";
-			showEnvVarsInLog = 0;
-		};
-		22F08F5015E65949003E8456 /* ShellScript */ = {
+		2281035415E6628D00CBD9D3 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -402,6 +388,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "ln -s \"Versions/${FRAMEWORK_VERSION}/Scripts\" \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}/Scripts\"";
+			showEnvVarsInLog = 0;
+		};
+		22BC8E4115DABA0E00132883 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SOURCE_ROOT}/Scripts/package-pseudo-framework.sh\"\nln -sfh \"Versions/${FRAMEWORK_VERSION}/Scripts\" \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}/Scripts\"";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
