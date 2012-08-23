@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22114AA715E4FFC900CE0D43 /* sign-bundled.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22114AA615E4FFC900CE0D43 /* sign-bundled.sh */; };
-		22114AA915E4FFE100CE0D43 /* sign-bundled.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22114AA615E4FFC900CE0D43 /* sign-bundled.sh */; };
 		221CB53215DA9816004C6398 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221CB53115DA9816004C6398 /* Cocoa.framework */; };
 		221CB55215DA9883004C6398 /* ECConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 221CB54B15DA9883004C6398 /* ECConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		221CB55315DA9883004C6398 /* ECConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CB54C15DA9883004C6398 /* ECConfig.m */; };
@@ -21,20 +19,8 @@
 		221CB5DD15DAB038004C6398 /* ECConfigShared.pch in Headers */ = {isa = PBXBuildFile; fileRef = 221CB56715DA98ED004C6398 /* ECConfigShared.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		226153A215DAD312006783C3 /* ECConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CB54C15DA9883004C6398 /* ECConfig.m */; };
 		226153A315DAD31F006783C3 /* ECConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 221CB54B15DA9883004C6398 /* ECConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22818A1515E39D6C0005406B /* update-version.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22818A1115E39D6C0005406B /* update-version.sh */; };
-		22818A1615E39D6C0005406B /* backup-submodules.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22818A1215E39D6C0005406B /* backup-submodules.sh */; };
-		22818A1715E39D6C0005406B /* merge-latest-submodules.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22818A1315E39D6C0005406B /* merge-latest-submodules.sh */; };
-		22818A1815E39D6C0005406B /* merge-latest.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22818A1415E39D6C0005406B /* merge-latest.sh */; };
-		22818A1A15E39DB30005406B /* update-version.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22818A1115E39D6C0005406B /* update-version.sh */; };
-		22818A1B15E39DB30005406B /* backup-submodules.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22818A1215E39D6C0005406B /* backup-submodules.sh */; };
-		22818A1C15E39DB30005406B /* merge-latest-submodules.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22818A1315E39D6C0005406B /* merge-latest-submodules.sh */; };
-		22818A1D15E39DB30005406B /* merge-latest.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22818A1415E39D6C0005406B /* merge-latest.sh */; };
-		22818A2815E3A1280005406B /* testflight-extract-url.py in Resources */ = {isa = PBXBuildFile; fileRef = 22818A2615E3A1280005406B /* testflight-extract-url.py */; };
-		22818A2915E3A1280005406B /* testflight-upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22818A2715E3A1280005406B /* testflight-upload.sh */; };
-		22818A2A15E3A1340005406B /* testflight-extract-url.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22818A2615E3A1280005406B /* testflight-extract-url.py */; };
-		22818A2B15E3A1340005406B /* testflight-upload.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22818A2715E3A1280005406B /* testflight-upload.sh */; };
-		22BC8E3F15DAB9FC00132883 /* package-pseudo-framework.sh in Resources */ = {isa = PBXBuildFile; fileRef = 22BC8E3E15DAB9FC00132883 /* package-pseudo-framework.sh */; };
-		22BC8E4315DABAB300132883 /* package-pseudo-framework.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22BC8E3E15DAB9FC00132883 /* package-pseudo-framework.sh */; };
+		2281032515E65E4C00CBD9D3 /* Scripts in CopyFiles */ = {isa = PBXBuildFile; fileRef = 228102F415E65DC800CBD9D3 /* Scripts */; };
+		2281032715E65E5E00CBD9D3 /* Scripts in CopyFiles */ = {isa = PBXBuildFile; fileRef = 228102F415E65DC800CBD9D3 /* Scripts */; };
 		22BC8E4415DABAB300132883 /* InfoPlist.strings in CopyFiles */ = {isa = PBXBuildFile; fileRef = 221CB54E15DA9883004C6398 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
@@ -45,22 +31,33 @@
 			dstPath = "$(RESOURCES_FOLDER_PATH)";
 			dstSubfolderSpec = 16;
 			files = (
-				22818A2A15E3A1340005406B /* testflight-extract-url.py in CopyFiles */,
-				22818A2B15E3A1340005406B /* testflight-upload.sh in CopyFiles */,
-				22818A1A15E39DB30005406B /* update-version.sh in CopyFiles */,
-				22818A1B15E39DB30005406B /* backup-submodules.sh in CopyFiles */,
-				22818A1C15E39DB30005406B /* merge-latest-submodules.sh in CopyFiles */,
-				22818A1D15E39DB30005406B /* merge-latest.sh in CopyFiles */,
-				22BC8E4315DABAB300132883 /* package-pseudo-framework.sh in CopyFiles */,
-				22114AA915E4FFE100CE0D43 /* sign-bundled.sh in CopyFiles */,
 				22BC8E4415DABAB300132883 /* InfoPlist.strings in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22F08F4C15E65848003E8456 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "Versions/$(FRAMEWORK_VERSION)";
+			dstSubfolderSpec = 1;
+			files = (
+				2281032715E65E5E00CBD9D3 /* Scripts in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22F08F4E15E6586A003E8456 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(VERSION_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				2281032515E65E4C00CBD9D3 /* Scripts in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		22114AA615E4FFC900CE0D43 /* sign-bundled.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "sign-bundled.sh"; sourceTree = "<group>"; };
 		221CB52E15DA9816004C6398 /* ECConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ECConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		221CB53115DA9816004C6398 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		221CB53415DA9816004C6398 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -90,18 +87,12 @@
 		2237934D15DE9E3E00750616 /* .appledoc.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = .appledoc.plist; sourceTree = "<group>"; };
 		2237934E15DE9E7F00750616 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; wrapsLines = 1; };
 		2251BA4715DBCDA800F2FE40 /* ECFramework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECFramework.xcconfig; sourceTree = "<group>"; };
-		22818A1115E39D6C0005406B /* update-version.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "update-version.sh"; sourceTree = "<group>"; };
-		22818A1215E39D6C0005406B /* backup-submodules.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "backup-submodules.sh"; sourceTree = "<group>"; };
-		22818A1315E39D6C0005406B /* merge-latest-submodules.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "merge-latest-submodules.sh"; sourceTree = "<group>"; };
-		22818A1415E39D6C0005406B /* merge-latest.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "merge-latest.sh"; sourceTree = "<group>"; };
-		22818A2615E3A1280005406B /* testflight-extract-url.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "testflight-extract-url.py"; sourceTree = "<group>"; };
-		22818A2715E3A1280005406B /* testflight-upload.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "testflight-upload.sh"; sourceTree = "<group>"; };
+		228102F415E65DC800CBD9D3 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = SOURCE_ROOT; };
 		228614E915DEB746000D74EB /* ECConfigIOSDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ECConfigIOSDebug.xcconfig; sourceTree = "<group>"; };
 		228614EA15DEB746000D74EB /* ECConfigIOSRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ECConfigIOSRelease.xcconfig; sourceTree = "<group>"; };
 		228614EB15DEB746000D74EB /* ECConfigMacDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ECConfigMacDebug.xcconfig; sourceTree = "<group>"; };
 		228614EC15DEB746000D74EB /* ECConfigMacRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ECConfigMacRelease.xcconfig; sourceTree = "<group>"; };
 		22BC8E3815DAB90300132883 /* ECUnitTests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ECUnitTests.xcconfig; sourceTree = "<group>"; };
-		22BC8E3E15DAB9FC00132883 /* package-pseudo-framework.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "package-pseudo-framework.sh"; sourceTree = "<group>"; };
 		22DC789115DDA739009B98DD /* Documentation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Documentation; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -127,6 +118,7 @@
 		221CB52215DA9816004C6398 = {
 			isa = PBXGroup;
 			children = (
+				228102F415E65DC800CBD9D3 /* Scripts */,
 				2237934B15DE9E1600750616 /* Documentation */,
 				2251BA4F15DBD03A00F2FE40 /* Source */,
 				221CB54D15DA9883004C6398 /* Resources */,
@@ -176,14 +168,6 @@
 		221CB54D15DA9883004C6398 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				22818A2615E3A1280005406B /* testflight-extract-url.py */,
-				22818A2715E3A1280005406B /* testflight-upload.sh */,
-				22818A1115E39D6C0005406B /* update-version.sh */,
-				22818A1215E39D6C0005406B /* backup-submodules.sh */,
-				22114AA615E4FFC900CE0D43 /* sign-bundled.sh */,
-				22818A1315E39D6C0005406B /* merge-latest-submodules.sh */,
-				22818A1415E39D6C0005406B /* merge-latest.sh */,
-				22BC8E3E15DAB9FC00132883 /* package-pseudo-framework.sh */,
 				221CB54E15DA9883004C6398 /* InfoPlist.strings */,
 				221CB55015DA9883004C6398 /* Info.plist */,
 			);
@@ -321,6 +305,8 @@
 				221CB52A15DA9816004C6398 /* Frameworks */,
 				221CB52B15DA9816004C6398 /* Headers */,
 				221CB52C15DA9816004C6398 /* Resources */,
+				22F08F4C15E65848003E8456 /* CopyFiles */,
+				22F08F5015E65949003E8456 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -339,6 +325,7 @@
 				221CB5AC15DAA4C4004C6398 /* Sources */,
 				221CB5AD15DAA4C4004C6398 /* Frameworks */,
 				22BC8E4215DABAA100132883 /* CopyFiles */,
+				22F08F4E15E6586A003E8456 /* CopyFiles */,
 				22BC8E4115DABA0E00132883 /* ShellScript */,
 			);
 			buildRules = (
@@ -383,14 +370,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				221CB55415DA9883004C6398 /* InfoPlist.strings in Resources */,
-				22BC8E3F15DAB9FC00132883 /* package-pseudo-framework.sh in Resources */,
-				22818A1515E39D6C0005406B /* update-version.sh in Resources */,
-				22818A1615E39D6C0005406B /* backup-submodules.sh in Resources */,
-				22818A1715E39D6C0005406B /* merge-latest-submodules.sh in Resources */,
-				22818A1815E39D6C0005406B /* merge-latest.sh in Resources */,
-				22818A2815E3A1280005406B /* testflight-extract-url.py in Resources */,
-				22818A2915E3A1280005406B /* testflight-upload.sh in Resources */,
-				22114AA715E4FFC900CE0D43 /* sign-bundled.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,8 +387,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "Resources/package-pseudo-framework.sh\n";
+			shellScript = "Scripts/package-pseudo-framework.sh\necho \"${VERSION_FOLDER_PATH}\"\nln -s \"Versions/${FRAMEWORK_VERSION}/Scripts\" \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}/Scripts\"";
 			showEnvVarsInLog = 0;
+		};
+		22F08F5015E65949003E8456 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ln -s \"Versions/${FRAMEWORK_VERSION}/Scripts\" \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}/Scripts\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
