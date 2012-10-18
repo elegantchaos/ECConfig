@@ -4,6 +4,8 @@
 ## a -template.md for inclusion in an appledoc documentation bundle.
 
 output=$1
+mkdir -p "$output"
+
 shift
 
 while :; do
