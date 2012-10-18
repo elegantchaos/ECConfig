@@ -16,9 +16,8 @@ while :; do
 	
 	shift
  
-	comments=`grep "##" "$file"`
+	comments=`grep "^##" "$file"`
 
-	pattern="## ([a-z]*).git@github.com:([a-zA-Z0-9]+)\/"
 	[[ $comments =~ $pattern ]]
 	githubrepo=${BASH_REMATCH[1]}
 	githubuser=${BASH_REMATCH[2]}
