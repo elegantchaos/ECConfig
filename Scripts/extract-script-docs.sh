@@ -8,6 +8,7 @@ pattern="## ([a-z]*).git@github.com:([a-zA-Z0-9]+)\/"
 githubrepo=${BASH_REMATCH[1]}
 githubuser=${BASH_REMATCH[2]}
 
-base=`basename "$file" ".sh"`
+base=`basename "$file"`
+name=${base%.*}
 
-echo "${comments//##/}" > "$base-template.md"
+echo "${comments//##/}" > "$name-template.md"
