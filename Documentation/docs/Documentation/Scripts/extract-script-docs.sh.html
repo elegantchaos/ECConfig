@@ -28,69 +28,40 @@
 					<p> Extract any comments prefixed with &ldquo;&rdquo; (like this one) in a file, and write them out to
  a -template.md for inclusion in an appledoc documentation bundle.</p>
 
+<p>extract-script-docs.sh:</p>
+
 <pre><code>#!/usr/bin/env bash
 
-
-
 ## Extract any comments prefixed with "##" (like this one) in a file, and write them out to
-
 ## a -template.md for inclusion in an appledoc documentation bundle.
 
-
-
 output=$1
-
 mkdir -p "$output"
 
-
-
 shift
-
 prefix=$1
-
-
 
 index=`cat "$prefix"`
 
-
-
 while :; do
-
     shift
-
     file=$1
-
     if [[ "$file" == "" ]]; then
-
         break
-
     fi
-
-
-
 
 
     comments=`grep "^##" "$file"`
 
-
-
     base=`basename "$file"`
-
     name=${base%.*}
 
-
-
     echo "${comments//##/}" &gt; "$output/$base-template.markdown"
-
     echo "" &gt;&gt; "$output/$base-template.markdown"
-
-    awk '{print "    "$0"\n"}' $file &gt;&gt; "$output/$base-template.markdown"
-
+    echo "$base:" &gt;&gt; "$output/$base-template.markdown"
+    awk '{print "    "$0}' $file &gt;&gt; "$output/$base-template.markdown"
     index=`echo "$index"; echo "- `$base`"`
-
 done
-
-
 
 echo "$index" &gt; "$output/Scripts-template.markdown"
 </code></pre>
