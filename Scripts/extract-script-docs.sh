@@ -25,7 +25,9 @@ while :; do
 	name=${base%.*}
 
 	echo "${comments//##/}" > "$output/$base-template.markdown"
-	
+	echo "" >> "$output/$base-template.markdown"
+	echo "### $base:" >> "$output/$base-template.markdown"
+	awk '{print "    "$0}' $file >> "$output/$base-template.markdown"
 	index=`echo "$index"; echo "- [$base]($base.html)"`
 done
 
