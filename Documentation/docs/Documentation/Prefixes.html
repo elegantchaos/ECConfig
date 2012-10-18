@@ -50,9 +50,8 @@
 #import "BlahShared.pch"
 
 #define SOME_DEBUG_SETTING_HERE
+// etc...
 </code></pre>
-
-<p>   // etc&hellip;</p>
 
 <p>BlahRelease.pch:</p>
 
@@ -60,9 +59,8 @@
 #import "BlahShared.pch"
 
 #define SOME_RELEASE_SETTING_HERE
+// etc...
 </code></pre>
-
-<p>   // etc&hellip;</p>
 
 <p>BlahAppStore.pch:</p>
 
@@ -70,15 +68,16 @@
 #import "BlahShared.pch"
 
 #define SOME_APP_STORE_SETTING_HERE
+// etc...
 </code></pre>
-
-<p>   // etc&hellip;</p>
 
 <p>BlahAppShared.pch:</p>
 
-<p>   #define SOME_SHARED_SETTING_HERE
-   #import &ldquo;SomeStuff.h&rdquo;
-   // etc&hellip;</p>
+<pre><code>#define SOME_SHARED_SETTING_HERE
+#import &lt;ECLogging/ECLogging.h&gt; // for example, let's use the ECLogging framework
+#import &lt;SomeOtherFramework/SomeOtherFramework.h&gt;
+// etc...
+</code></pre>
 				</div>
 				<div id="footer">
 					<hr />
