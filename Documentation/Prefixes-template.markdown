@@ -23,7 +23,7 @@ BlahDebug.pch:
     #import "BlahShared.pch"
     
     #define SOME_DEBUG_SETTING_HERE
-   // etc...
+    // etc...
 
 BlahRelease.pch:
 
@@ -31,7 +31,7 @@ BlahRelease.pch:
     #import "BlahShared.pch"
 
     #define SOME_RELEASE_SETTING_HERE
-   // etc...
+    // etc...
 
 BlahAppStore.pch:
 
@@ -39,13 +39,14 @@ BlahAppStore.pch:
     #import "BlahShared.pch"
     
     #define SOME_APP_STORE_SETTING_HERE
-   // etc...
+    // etc...
 
 
 BlahAppShared.pch:
 
-   #define SOME_SHARED_SETTING_HERE
-   #import "SomeStuff.h"
-   // etc...
+    #define SOME_SHARED_SETTING_HERE
+    #import <ECLogging/ECLogging.h> // for example, let's use the ECLogging framework
+    #import <SomeOtherFramework/SomeOtherFramework.h>
+    // etc...
 
 
