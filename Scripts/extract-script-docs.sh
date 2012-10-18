@@ -26,7 +26,7 @@ while :; do
 
 	echo "${comments//##/}" > "$output/$base-template.markdown"
 	
-	index=`echo "$index"; echo "- [$base]"`
+	index=`echo "$index"; echo "- [$base]($base.html)"`
 done
 
 echo "$index" > "$output/Scripts-template.markdown"
