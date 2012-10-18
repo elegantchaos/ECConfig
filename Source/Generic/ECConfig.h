@@ -6,10 +6,12 @@
 
 #import <Foundation/Foundation.h>
 
+#import "ECMacros.h"
+
 /** 
  * Currently a placeholder.
  *
- * This framework is simply used to store xcconfigs, pch files, and scripts.
+ * This framework is simply used to store xcconfigs, pch files, macros, and scripts.
  */
 
 @interface ECConfig : NSObject

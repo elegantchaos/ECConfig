@@ -6,6 +6,7 @@ the other Elegant Chaos libraries.
 This includes:
 
 - Standard Configs
+- Standard Macros and Definitions
 - Standard Prefixes
 - Standard Scripts
 
