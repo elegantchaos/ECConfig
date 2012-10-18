@@ -28,7 +28,7 @@
 					<p> Extract any comments prefixed with &ldquo;&rdquo; (like this one) in a file, and write them out to
  a -template.md for inclusion in an appledoc documentation bundle.</p>
 
-<p>extract-script-docs.sh:</p>
+<h3>extract-script-docs.sh:</h3>
 
 <pre><code>#!/usr/bin/env bash
 
@@ -58,7 +58,7 @@ while :; do
 
     echo "${comments//##/}" &gt; "$output/$base-template.markdown"
     echo "" &gt;&gt; "$output/$base-template.markdown"
-    echo "$base:" &gt;&gt; "$output/$base-template.markdown"
+    echo "### $base:" &gt;&gt; "$output/$base-template.markdown"
     awk '{print "    "$0}' $file &gt;&gt; "$output/$base-template.markdown"
     index=`echo "$index"; echo "- `$base`"`
 done
