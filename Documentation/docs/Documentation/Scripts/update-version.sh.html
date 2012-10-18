@@ -25,9 +25,22 @@
 			<a title="update-version.sh Document" name="top"></a>
 			<div id="overview_contents" role="main">
 				<div id="container">	
-					<h3>update-version.sh:</h3>
+					<p> Script which takes the line count of the git log and sets it as the CFBundleVersion number in the target&rsquo;s Info.plist</p>
+
+<p> To use this script, add a Run Script phase to a target, and include this line</p>
+
+<pre><code> "${ECCONFIG_SCRIPTS_PATH}/update-version.sh"
+</code></pre>
+
+<h3>update-version.sh:</h3>
 
 <pre><code>#!/bin/bash
+
+## Script which takes the line count of the git log and sets it as the CFBundleVersion number in the target's Info.plist
+##
+## To use this script, add a Run Script phase to a target, and include this line
+##     "${ECCONFIG_SCRIPTS_PATH}/update-version.sh"
+##
 
 PLIST="$1"
 if [ "$PLIST" == "" ]; then

@@ -25,9 +25,17 @@
 			<a title="sign-bundled.sh Document" name="top"></a>
 			<div id="overview_contents" role="main">
 				<div id="container">	
-					<h3>sign-bundled.sh:</h3>
+					<p> Re-sign every plugin and framework using the bundle id and code signing identity of the target</p>
+
+<p> You can use this script in a Run Script phase to ensure that all plugins and frameworks are signed consistently.</p>
+
+<h3>sign-bundled.sh:</h3>
 
 <pre><code>BUNDLEID=`/usr/libexec/PlistBuddy -c "Print :CFBundleIdentifier" ${INFOPLIST_FILE}`
+
+## Re-sign every plugin and framework using the bundle id and code signing identity of the target
+##
+## You can use this script in a Run Script phase to ensure that all plugins and frameworks are signed consistently.
 
 echo "Signing PlugIns"
 for f in "${CODESIGNING_FOLDER_PATH}/Contents/PlugIns/"*
