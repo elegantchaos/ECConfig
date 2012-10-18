@@ -12,8 +12,11 @@ if [ "$PLIST" == "" ]; then
 fi
 
 VERSION=`git log --oneline | wc -l`
+COMMIT=`git rev-parse HEAD`
 
 # update the plist in the built app
+/usr/libexec/PlistBuddy -c "Add :ECVersionCommit string commit" "$PLIST"
+/usr/libexec/PlistBuddy -c "Set :ECVersionCommit $COMMIT" "$PLIST"
 /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $VERSION" "$PLIST"
 
-echo "Bumped build number to $VERSION in $PLIST"
+echo "Bumped build number to $VERSION ($COMMIT) in $PLIST"
