@@ -25,5 +25,5 @@ while :; do
 	base=`basename "$file"`
 	name=${base%.*}
 
-	echo "${comments//##/}" > "$output/$name-template.md"
+	echo "${comments//##/}" > "$output/$base-template.md"
 done
