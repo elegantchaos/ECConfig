@@ -33,23 +33,40 @@
 
 <p> It performs various linking and copying operations to lay out the framework bundle correctly.</p>
 
-<p>prefix#!/usr/bin/env bash
-prefix
-prefix## This script is used in iOS targets that are packaged up as &ldquo;pseudo&rdquo; frameworks.
-prefix##
-prefix## The script is called from a Run Script phase, like this:
-prefix##
-prefix## &ldquo;${ECCONFIG_SCRIPTS_PATH}/package-pseudo-framework.sh&rdquo;
-prefix##
-prefix## It performs various linking and copying operations to lay out the framework bundle correctly.
-prefix
-prefixFRAMEWORK_ROOT=&ldquo;${BUILT_PRODUCTS_DIR}/${CONTENTS_FOLDER_PATH}&rdquo;
-prefix
-prefixmkdir -p &ldquo;${FRAMEWORK_ROOT}/Versions&rdquo;
-prefix/bin/ln -sfh A &ldquo;${FRAMEWORK_ROOT}/Versions/Current&rdquo;
-prefix/bin/ln -sfh Versions/Current/Headers &ldquo;${FRAMEWORK_ROOT}/Headers&rdquo;
-prefix/bin/ln -sfh Versions/Current/Resources &ldquo;${FRAMEWORK_ROOT}/Resources&rdquo;
-prefix/bin/ln -sfh &ldquo;Versions/Current/${PRODUCT_NAME}&rdquo; &ldquo;${FRAMEWORK_ROOT}/${PRODUCT_NAME}&rdquo;</p>
+<pre><code>#!/usr/bin/env bash
+
+
+
+## This script is used in iOS targets that are packaged up as "pseudo" frameworks.
+
+##
+
+## The script is called from a Run Script phase, like this:
+
+##
+
+## "${ECCONFIG_SCRIPTS_PATH}/package-pseudo-framework.sh"
+
+##
+
+## It performs various linking and copying operations to lay out the framework bundle correctly.
+
+
+
+FRAMEWORK_ROOT="${BUILT_PRODUCTS_DIR}/${CONTENTS_FOLDER_PATH}"
+
+
+
+mkdir -p "${FRAMEWORK_ROOT}/Versions"
+
+/bin/ln -sfh A "${FRAMEWORK_ROOT}/Versions/Current"
+
+/bin/ln -sfh Versions/Current/Headers "${FRAMEWORK_ROOT}/Headers"
+
+/bin/ln -sfh Versions/Current/Resources "${FRAMEWORK_ROOT}/Resources"
+
+/bin/ln -sfh "Versions/Current/${PRODUCT_NAME}" "${FRAMEWORK_ROOT}/${PRODUCT_NAME}"
+</code></pre>
 				</div>
 				<div id="footer">
 					<hr />

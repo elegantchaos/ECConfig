@@ -36,75 +36,103 @@
 <li>merge in the temporary branch &ndash; this should be a fast forward</li>
 <li>remove the temporary branch</li>
 <li>rebase on the remote &ldquo;develop&rdquo; from origin</li>
-<li>push the resulting changed branch back to origin</li>
+<li><p>push the resulting changed branch back to origin</p>
+
+<p> #!/usr/bin/env bash</p>
+
+<p> ## This script is an attempt to automate picking up the latest version of the &ldquo;develop&rdquo; branch for a module, given that it might be on a detatch HEAD at the time.</p>
+
+<p> ##</p>
+
+<p> ## It performs the following steps:</p>
+
+<p> ##</p>
+
+<p> ## &ndash; rebase on the local develop branch</p>
+
+<p> ## &ndash; save this to a temporary branch</p>
+
+<p> ## &ndash; switch to the local develop branch</p>
+
+<p> ## &ndash; merge in the temporary branch &ndash; this should be a fast forward</p>
+
+<p> ## &ndash; remove the temporary branch</p>
+
+<p> ## &ndash; rebase on the remote &ldquo;develop&rdquo; from origin</p>
+
+<p> ## &ndash; push the resulting changed branch back to origin</p>
+
+<p> check() {</p>
+
+<pre><code> if [[ $1 != 0 ]]; then
+
+   echo "failed: $2"
+
+   exit $1
+
+ fi
+</code></pre>
+
+<p> }</p>
+
+<p> status=<code>git status --porcelain</code></p>
+
+<p> if [[ &ldquo;$status&rdquo; != &ldquo;&rdquo; ]]; then</p>
+
+<pre><code> echo "You have local changes. Commit them first."
+
+ exit 1
+</code></pre>
+
+<p> fi</p>
+
+<p> # we may start on something that isn&rsquo;t the develop branch</p>
+
+<p> # possibly a detached HEAD</p>
+
+<p> # try to apply any changes on top of our local develop</p>
+
+<p> git rebase develop</p>
+
+<p> check $? &ldquo;rebasing on develop&rdquo;</p>
+
+<p> # now fast forward develop to the merged place</p>
+
+<p> git checkout -b develop-temp</p>
+
+<p> check $? &ldquo;making temp branch&rdquo;</p>
+
+<p> git checkout develop</p>
+
+<p> check $? &ldquo;switching back to develop&rdquo;</p>
+
+<p> git merge develop-temp</p>
+
+<p> check $? &ldquo;merging local changes&rdquo;</p>
+
+<p> git branch -d develop-temp</p>
+
+<p> check $? &ldquo;removing temp branch&rdquo;</p>
+
+<p> # we should now be on a local develop branch incorporating any local changes</p>
+
+<p> echo fetching latest revisions</p>
+
+<p> git fetch</p>
+
+<p> # try to rebase again on top of any remote changes</p>
+
+<p> git rebase</p>
+
+<p> check $? &ldquo;rebasing on origin/develop&rdquo;</p>
+
+<p> # if that worked, push back the merged version</p>
+
+<p> git push</p>
+
+<p> check $? &ldquo;pushing&rdquo;</p></li>
 </ul>
 
-
-<p>prefix#!/usr/bin/env bash
-prefix
-prefix## This script is an attempt to automate picking up the latest version of the &ldquo;develop&rdquo; branch for a module, given that it might be on a detatch HEAD at the time.
-prefix##
-prefix## It performs the following steps:
-prefix##
-prefix## &ndash; rebase on the local develop branch
-prefix## &ndash; save this to a temporary branch
-prefix## &ndash; switch to the local develop branch
-prefix## &ndash; merge in the temporary branch &ndash; this should be a fast forward
-prefix## &ndash; remove the temporary branch
-prefix## &ndash; rebase on the remote &ldquo;develop&rdquo; from origin
-prefix## &ndash; push the resulting changed branch back to origin
-prefix
-prefixcheck() {
-prefix    if [[ $1 != 0 ]]; then
-prefix      echo &ldquo;failed: $2&rdquo;
-prefix      exit $1
-prefix    fi
-prefix}
-prefix
-prefixstatus=<code>git status --porcelain</code>
-prefix
-prefixif [[ &ldquo;$status&rdquo; != &ldquo;&rdquo; ]]; then
-prefix    echo &ldquo;You have local changes. Commit them first.&rdquo;
-prefix    exit 1
-prefixfi
-prefix
-prefix# we may start on something that isn&rsquo;t the develop branch
-prefix# possibly a detached HEAD
-prefix
-prefix# try to apply any changes on top of our local develop
-prefix
-prefixgit rebase develop
-prefixcheck $? &ldquo;rebasing on develop&rdquo;
-prefix
-prefix# now fast forward develop to the merged place
-prefix
-prefixgit checkout -b develop-temp
-prefixcheck $? &ldquo;making temp branch&rdquo;
-prefix
-prefixgit checkout develop
-prefixcheck $? &ldquo;switching back to develop&rdquo;
-prefix
-prefixgit merge develop-temp
-prefixcheck $? &ldquo;merging local changes&rdquo;
-prefix
-prefixgit branch -d develop-temp
-prefixcheck $? &ldquo;removing temp branch&rdquo;
-prefix
-prefix# we should now be on a local develop branch incorporating any local changes
-prefixecho fetching latest revisions
-prefixgit fetch
-prefix
-prefix# try to rebase again on top of any remote changes
-prefix
-prefixgit rebase
-prefixcheck $? &ldquo;rebasing on origin/develop&rdquo;
-prefix
-prefix# if that worked, push back the merged version
-prefix
-prefixgit push
-prefixcheck $? &ldquo;pushing&rdquo;
-prefix
-prefix</p>
 				</div>
 				<div id="footer">
 					<hr />

@@ -29,13 +29,20 @@
 
 <p> Used internally.</p>
 
-<p>prefix#!/usr/bin/env bash
-prefix
-prefix## Pushes all branches of all submodules in the current project to a remote called &ldquo;backup&rdquo;.
-prefix##
-prefix## Used internally.
-prefix
-prefixgit submodule foreach &lsquo;git push backup &mdash;all&rsquo;</p>
+<pre><code>#!/usr/bin/env bash
+
+
+
+## Pushes all branches of all submodules in the current project to a remote called "backup".
+
+##
+
+## Used internally.
+
+
+
+git submodule foreach 'git push backup --all'
+</code></pre>
 				</div>
 				<div id="footer">
 					<hr />

@@ -25,15 +25,24 @@
 			<a title="testflight-extract-url.py Document" name="top"></a>
 			<div id="overview_contents" role="main">
 				<div id="container">	
-					<p>prefix#!/usr/bin/env python
-prefix
-prefiximport json
-prefiximport sys
-prefix
-prefixresult = json.load(sys.stdin)
-prefixurl = result[&lsquo;config_url&rsquo;]
-prefix
-prefixprint url</p>
+					<pre><code>#!/usr/bin/env python
+
+
+
+import json
+
+import sys
+
+
+
+result = json.load(sys.stdin)
+
+url = result['config_url']
+
+
+
+print url
+</code></pre>
 				</div>
 				<div id="footer">
 					<hr />
