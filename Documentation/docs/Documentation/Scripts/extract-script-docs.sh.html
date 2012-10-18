@@ -27,6 +27,45 @@
 				<div id="container">	
 					<p> Extract any comments prefixed with &ldquo;&rdquo; (like this one) in a file, and write them out to
  a -template.md for inclusion in an appledoc documentation bundle.</p>
+
+<h1>!/usr/bin/env bash</h1>
+
+<h2>Extract any comments prefixed with &ldquo;##&rdquo; (like this one) in a file, and write them out to</h2>
+
+<h2>a -template.md for inclusion in an appledoc documentation bundle.</h2>
+
+<p>output=$1
+mkdir -p &ldquo;$output&rdquo;</p>
+
+<p>shift
+prefix=$1</p>
+
+<p>index=<code>cat "$prefix"</code></p>
+
+<p>while :; do</p>
+
+<pre><code>shift
+file=$1
+if [[ "$file" == "" ]]; then
+    break
+fi
+
+
+comments=`grep "^##" "$file"`
+
+base=`basename "$file"`
+name=${base%.*}
+
+echo "${comments//##/}" &gt; "$output/$base-template.markdown"
+echo "" &gt;&gt; "$output/$base-template.markdown"
+cat "$file" &gt;&gt; "$output/$base-template.markdown"
+
+index=`echo "$index"; echo "- `$base`"`
+</code></pre>
+
+<p>done</p>
+
+<p>echo &ldquo;$index&rdquo; > &ldquo;$output/Scripts-template.markdown&rdquo;</p>
 				</div>
 				<div id="footer">
 					<hr />

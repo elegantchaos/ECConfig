@@ -25,7 +25,27 @@
 			<a title="sign-bundled.sh Document" name="top"></a>
 			<div id="overview_contents" role="main">
 				<div id="container">	
-					
+					<p>BUNDLEID=<code>/usr/libexec/PlistBuddy -c "Print :CFBundleIdentifier" ${INFOPLIST_FILE}</code></p>
+
+<p>echo &ldquo;Signing PlugIns&rdquo;
+for f in &ldquo;${CODESIGNING_FOLDER_PATH}/Contents/PlugIns/&rdquo;*
+do</p>
+
+<pre><code>BUNDLEID=`/usr/libexec/PlistBuddy -c "Print :CFBundleIdentifier" "$f/Contents/Info.plist"`
+codesign -f -i ${BUNDLEID} -vv -s "${CODE_SIGN_IDENTITY}" "$f"
+</code></pre>
+
+<p>done</p>
+
+<p>echo &ldquo;Signing Frameworks&rdquo;
+for f in &ldquo;${CODESIGNING_FOLDER_PATH}/Contents/Frameworks/&rdquo;*
+do</p>
+
+<pre><code>BUNDLEID=`/usr/libexec/PlistBuddy -c "Print :CFBundleIdentifier" "$f/Resources/Info.plist"`
+codesign -f -i ${BUNDLEID} -vv -s "${CODE_SIGN_IDENTITY}" "$f"
+</code></pre>
+
+<p>done</p>
 				</div>
 				<div id="footer">
 					<hr />

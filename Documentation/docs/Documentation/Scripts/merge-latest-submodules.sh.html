@@ -28,6 +28,21 @@
 					<p> Runs the merge-latest.sh script for each submodule in the current project.</p>
 
 <p> Used internally.</p>
+
+<h1>!/usr/bin/env bash</h1>
+
+<h2>Runs the merge-latest.sh script for each submodule in the current project.</h2>
+
+<h1>#</h1>
+
+<h2>Used internally.</h2>
+
+<p>base=<code>dirname $0</code>
+pushd &ldquo;$base&rdquo; > /dev/null
+full=&ldquo;$PWD&rdquo;
+popd > /dev/null</p>
+
+<p>git submodule foreach &ldquo;\&rdquo;$full\&ldquo;/merge-latest.sh&rdquo;</p>
 				</div>
 				<div id="footer">
 					<hr />

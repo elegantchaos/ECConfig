@@ -25,7 +25,141 @@
 			<a title="testflight-upload.sh Document" name="top"></a>
 			<div id="overview_contents" role="main">
 				<div id="container">	
-					
+					<h1>!/bin/bash</h1>
+
+<p>rm /tmp/upload.log</p>
+
+<p>TMP=/tmp/testflight-upload
+LOG=&ldquo;${TMP}/upload.log&rdquo;
+ERROR_LOG=&ldquo;${TMP}/error.log&rdquo;</p>
+
+<p>rm &ldquo;${LLOG}&rdquo;
+rm &ldquo;${ERROR_LOG}&rdquo;</p>
+
+<p>mkdir -p &ldquo;$TMP&rdquo;
+echo &ldquo;Uploading&hellip;&rdquo; > &ldquo;${LOG}&rdquo;
+echo &ldquo;&rdquo; > &ldquo;${ERROR_LOG}&rdquo;</p>
+
+<p>GIT=/usr/bin/git</p>
+
+<p>APITOKEN=<code>defaults read com.elegantchaos.testflight-upload API_TOKEN</code>
+if [[ &ldquo;${APITOKEN}&rdquo; == &ldquo;&rdquo; ]]; then</p>
+
+<pre><code>echo "Need to set the TestFlight API token using 'defaults write com.elegantchaos.testflight-upload API_TOKEN &lt;token&gt;'" &gt;&gt; "${ERROR_LOG}"
+open "${ERROR_LOG}"
+exit 1
+</code></pre>
+
+<p>fi</p>
+
+<h1>team token and distribution list are per-project settings, so should be passed in</h1>
+
+<p>TEAMTOKEN=&ldquo;$1&rdquo;
+DISTRIBUTION=&ldquo;$2&rdquo;</p>
+
+<h1>set this to true to show a confirmation dialog before doing the upload</h1>
+
+<p>CONFIRM_MESSAGE=false</p>
+
+<h1>set this to true to use the git log as the default upload message</h1>
+
+<p>DEFAULT_MESSAGE_IS_GIT_LOG=true</p>
+
+<p>MESSAGE=&ldquo;&rdquo;</p>
+
+<p>if $DEFAULT_MESSAGE_IS_GIT_LOG; then</p>
+
+<pre><code># use the git log since the last upload as the upload message
+MESSAGE=`cd "$PROJECT_DIR"; $GIT log --oneline testflight-upload..HEAD`
+if [[ $? != 0 ]]; then
+    MESSAGE="first upload"
+fi
+</code></pre>
+
+<p>else</p>
+
+<pre><code># default to the last saved message
+if [ -e "${TMP}/upload.txt" ]; then
+    MESSAGE=`cat ${TMP}/upload.txt`
+fi
+</code></pre>
+
+<p>fi</p>
+
+<p>if $CONFIRM_MESSAGE; then</p>
+
+<pre><code># use applescript to ask about the upload
+MESSAGE=`osascript -e "tell application id \"com.apple.dt.Xcode\" to text returned of (display dialog \"Upload archive?\" default answer \"$MESSAGE\")"`
+if [[ $? != 0 ]] ; then
+    echo "Upload cancelled" &gt;&gt; "${LOG}"
+    exit 1
+fi
+</code></pre>
+
+<p>fi</p>
+
+<h1>archive the last commit message, just in case we want it</h1>
+
+<p>echo &ldquo;$MESSAGE&rdquo; > &ldquo;${TMP}/upload.txt&rdquo;</p>
+
+<p>SCRIPT_DIR=<code>dirname $0</code></p>
+
+<h1>make the ipa</h1>
+
+<p>echo &ldquo;Making $EXECUTABLE_NAME.ipa as ${CODE_SIGN_IDENTITY}&rdquo; >> &ldquo;${LOG}&rdquo;
+APP=&ldquo;$ARCHIVE_PRODUCTS_PATH/Applications/$EXECUTABLE_NAME.app&rdquo;
+DSYM=&ldquo;$ARCHIVE_DSYMS_PATH/$EXECUTABLE_NAME.app.dSYM&rdquo;
+IPA=&ldquo;$TMPDIR/$EXECUTABLE_NAME.ipa&rdquo;
+XCROOT=<code>/usr/bin/xcode-select -print-path</code>
+XCRUN=&ldquo;$XCROOT/usr/bin/xcrun&rdquo;</p>
+
+<p>echo &ldquo;$XCRUN&rdquo; -sdk iphoneos PackageApplication &ldquo;$APP&rdquo; -o &ldquo;$IPA&rdquo; &mdash;sign &ldquo;${CODE_SIGN_IDENTITY}&rdquo; &mdash;embed &ldquo;${APP}/${EMBEDDED_PROFILE_NAME}&rdquo; &amp;> &ldquo;${TMP}/xcrun.txt&rdquo;</p>
+
+<p>&ldquo;$XCRUN&rdquo; -sdk iphoneos PackageApplication &ldquo;$APP&rdquo; -o &ldquo;$IPA&rdquo; &mdash;sign &ldquo;${CODE_SIGN_IDENTITY}&rdquo; &mdash;embed &ldquo;${APP}/${EMBEDDED_PROFILE_NAME}&rdquo; &amp;> &ldquo;${TMP}/xcrun.log&rdquo;</p>
+
+<p>if [[ $? == 0 ]] ; then</p>
+
+<pre><code>    CURLLOG="${TMP}/curl.log"
+
+    echo "Uploading to Test Flight with notes:" &gt;&gt; "${LOG}"
+    echo "\"${MESSAGE}\"" &gt;&gt; "${LOG}"
+    echo "" &gt;&gt; "${LOG}"
+    echo "Distribution list ${DISTRIBUTION} will be mailed." &gt;&gt; "${LOG}"
+    echo "" &gt;&gt; "${LOG}"
+
+    zip -q -r "${DSYM}.zip" "${DSYM}"
+    rm "$CURLLOG"
+    curl http://testflightapp.com/api/builds.json --form file="@${IPA}" --form dsym="@${DSYM}.zip" --form api_token="${APITOKEN}" --form team_token="${TEAMTOKEN}" --form notes="${MESSAGE}" --form notify=True --form distribution_lists="${DISTRIBUTION}" -o "${CURLLOG}"
+    CONFIG_URL=`"${SCRIPT_DIR}/testflight-extract-url.py" &lt; "${CURLLOG}"`
+
+    if [[ $? == 0 ]] ; then
+        echo "Upload done." &gt;&gt; "${LOG}"
+        open "${CONFIG_URL}"
+
+        # update the git tag
+        cd "$PROJECT_DIR";
+        $GIT tag -f testflight-upload
+
+        # clean up if the upload worked
+        rm "${DSYM}.zip"
+        rm "${IPA}"
+
+    else
+        echo "Test Flight returned error:" &gt; "${ERROR_LOG}"
+        cat "${CURLLOG}" &gt;&gt; "${ERROR_LOG}"
+        open "${ERROR_LOG}"
+
+    fi
+</code></pre>
+
+<p>else</p>
+
+<pre><code>echo "Failed to build IPA"  &gt;&gt; "${ERROR_LOG}"
+open "${TMP}/xcrun.log"
+exit 1
+</code></pre>
+
+<p>fi</p>
 				</div>
 				<div id="footer">
 					<hr />
