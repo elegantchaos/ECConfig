@@ -25,23 +25,19 @@
 			<a title="update-version.sh Document" name="top"></a>
 			<div id="overview_contents" role="main">
 				<div id="container">	
-					<h1>!/bin/bash</h1>
-
-<p>PLIST=&ldquo;$1&rdquo;
-if [ &ldquo;$PLIST&rdquo; == &ldquo;&rdquo; ]; then</p>
-
-<pre><code>PLIST="${TARGET_BUILD_DIR}/${INFOPLIST_PATH}"
-</code></pre>
-
-<p>fi</p>
-
-<p>VERSION=<code>git log --oneline | wc -l</code></p>
-
-<h1>update the plist in the built app</h1>
-
-<p>/usr/libexec/PlistBuddy -c &ldquo;Set :CFBundleVersion $VERSION&rdquo; &ldquo;$PLIST&rdquo;</p>
-
-<p>echo &ldquo;Bumped build number to $VERSION in $PLIST&rdquo;</p>
+					<p>prefix#!/bin/bash
+prefix
+prefixPLIST=&ldquo;$1&rdquo;
+prefixif [ &ldquo;$PLIST&rdquo; == &ldquo;&rdquo; ]; then
+prefix    PLIST=&ldquo;${TARGET_BUILD_DIR}/${INFOPLIST_PATH}&rdquo;
+prefixfi
+prefix
+prefixVERSION=<code>git log --oneline | wc -l</code>
+prefix
+prefix# update the plist in the built app
+prefix/usr/libexec/PlistBuddy -c &ldquo;Set :CFBundleVersion $VERSION&rdquo; &ldquo;$PLIST&rdquo;
+prefix
+prefixecho &ldquo;Bumped build number to $VERSION in $PLIST&rdquo;</p>
 				</div>
 				<div id="footer">
 					<hr />

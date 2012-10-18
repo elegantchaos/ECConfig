@@ -28,44 +28,39 @@
 					<p> Extract any comments prefixed with &ldquo;&rdquo; (like this one) in a file, and write them out to
  a -template.md for inclusion in an appledoc documentation bundle.</p>
 
-<h1>!/usr/bin/env bash</h1>
-
-<h2>Extract any comments prefixed with &ldquo;##&rdquo; (like this one) in a file, and write them out to</h2>
-
-<h2>a -template.md for inclusion in an appledoc documentation bundle.</h2>
-
-<p>output=$1
-mkdir -p &ldquo;$output&rdquo;</p>
-
-<p>shift
-prefix=$1</p>
-
-<p>index=<code>cat "$prefix"</code></p>
-
-<p>while :; do</p>
-
-<pre><code>shift
-file=$1
-if [[ "$file" == "" ]]; then
-    break
-fi
-
-
-comments=`grep "^##" "$file"`
-
-base=`basename "$file"`
-name=${base%.*}
-
-echo "${comments//##/}" &gt; "$output/$base-template.markdown"
-echo "" &gt;&gt; "$output/$base-template.markdown"
-cat "$file" &gt;&gt; "$output/$base-template.markdown"
-
-index=`echo "$index"; echo "- `$base`"`
-</code></pre>
-
-<p>done</p>
-
-<p>echo &ldquo;$index&rdquo; > &ldquo;$output/Scripts-template.markdown&rdquo;</p>
+<p>prefix#!/usr/bin/env bash
+prefix
+prefix## Extract any comments prefixed with &ldquo;##&rdquo; (like this one) in a file, and write them out to
+prefix## a -template.md for inclusion in an appledoc documentation bundle.
+prefix
+prefixoutput=$1
+prefixmkdir -p &ldquo;$output&rdquo;
+prefix
+prefixshift
+prefixprefix=$1
+prefix
+prefixindex=<code>cat "$prefix"</code>
+prefix
+prefixwhile :; do
+prefix  shift
+prefix  file=$1
+prefix  if [[ &ldquo;$file&rdquo; == &ldquo;&rdquo; ]]; then
+prefix      break
+prefix  fi
+prefix<br/>
+prefix
+prefix  comments=<code>grep "^##" "$file"</code>
+prefix
+prefix  base=<code>basename "$file"</code>
+prefix  name=${base%.*}
+prefix
+prefix  echo &ldquo;${comments//##/}&rdquo; > &ldquo;$output/$base-template.markdown&rdquo;
+prefix  echo &ldquo;&rdquo; >> &ldquo;$output/$base-template.markdown&rdquo;
+prefix  awk &lsquo;{print &ldquo;prefix&rdquo;$0}&rsquo; $file >> &ldquo;$output/$base-template.markdown&rdquo;
+prefix  index=<code>echo "$index"; echo "- </code>$base<code>"</code>
+prefixdone
+prefix
+prefixecho &ldquo;$index&rdquo; > &ldquo;$output/Scripts-template.markdown&rdquo;</p>
 				</div>
 				<div id="footer">
 					<hr />
