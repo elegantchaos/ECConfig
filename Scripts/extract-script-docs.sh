@@ -7,23 +7,26 @@ output=$1
 mkdir -p "$output"
 
 shift
+prefix=$1
+
+index=`cat "$prefix"`
 
 while :; do
+	shift
 	file=$1
 	if [[ "$file" == "" ]]; then
 		break
 	fi
 	
-	shift
  
 	comments=`grep "^##" "$file"`
-
-	[[ $comments =~ $pattern ]]
-	githubrepo=${BASH_REMATCH[1]}
-	githubuser=${BASH_REMATCH[2]}
 
 	base=`basename "$file"`
 	name=${base%.*}
 
-	echo "${comments//##/}" > "$output/$base-template.md"
+	echo "${comments//##/}" > "$output/$base-template.markdown"
+	
+	index=`echo "$index"; echo "- [$base]"`
 done
+
+echo "$index" > "$output/Scripts-template.markdown"
