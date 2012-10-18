@@ -1,5 +1,11 @@
 #!/bin/bash
 
+## Script which takes the line count of the git log and sets it as the CFBundleVersion number in the target's Info.plist
+##
+## To use this script, add a Run Script phase to a target, and include this line
+##     "${ECCONFIG_SCRIPTS_PATH}/update-version.sh"
+##
+
 PLIST="$1"
 if [ "$PLIST" == "" ]; then
     PLIST="${TARGET_BUILD_DIR}/${INFOPLIST_PATH}"

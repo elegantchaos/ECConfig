@@ -1,5 +1,15 @@
 #!/bin/bash
 
+## Script which uploads the target to Testflight.
+## Use this script as a Post-Action script in the Archive phase of a Scheme.
+##
+## The API token to use is read from the defaults system. To set it use
+##     defaults write com.elegantchaos.testflight-upload API_TOKEN <token>
+##
+## The Team Token is passed in to the script as a first parameter, since it varies with each project.
+## The second parameter should be the name of a TestFlight distribution list. All users in the list will be notified
+## when the target has been uploaded.
+
 rm /tmp/upload.log
 
 TMP=/tmp/testflight-upload

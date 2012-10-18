@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+## Python script to extract the URL from the json results returned by TestFlight
+
 import json
 import sys
 
