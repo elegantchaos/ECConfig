@@ -27,7 +27,57 @@
 				<div id="container">	
 					<h2>Scripts</h2>
 
-<p>Script documentation here.</p>
+<p>ECConfig contains a number of scripts used by ECConfig itself or by other EC Frameworks.</p>
+
+<p>Some of these aren&rsquo;t really intended for public use, but they&rsquo;re all documented here just in case.</p>
+
+<h2>backup-submodules.sh</h2>
+
+<p>Pushes all branches of all submodules in the current project to a remote called &ldquo;backup&rdquo;.</p>
+
+<p>Used internally.</p>
+
+<h2>merge-latest-submodules.sh</h2>
+
+<p>Runs the merge-latest.sh script for each submodule in the current project.</p>
+
+<p>Used internally.</p>
+
+<h2>merge-latest.sh</h2>
+
+<p>This script is an attempt to automate picking up the latest version of the &ldquo;develop&rdquo; branch for a module, given that it might be on a detatch HEAD at the time.</p>
+
+<p>It performs the following steps:</p>
+
+<ul>
+<li>rebase on the local develop branch</li>
+<li>save this to a temporary branch</li>
+<li>switch to the local develop branch</li>
+<li>merge in the temporary branch &ndash; this should be a fast forward</li>
+<li>remove the temporary branch</li>
+<li>rebase on the remote &ldquo;develop&rdquo; from origin</li>
+<li>push the resulting changed branch back to origin</li>
+</ul>
+
+
+<h2>package-pseudo-framework.sh</h2>
+
+<p>This script is used in iOS targets that are packaged up as &ldquo;pseudo&rdquo; frameworks.</p>
+
+<p>The script is called from a Run Script phase, like this:</p>
+
+<pre><code>"${ECCONFIG_SCRIPTS_PATH}/package-pseudo-framework.sh"
+</code></pre>
+
+<p>It performs various linking and copying operations to lay out the framework bundle correctly.</p>
+
+<h2>sign-bundled.sh</h2>
+
+<h2>testflight-extract-url.py</h2>
+
+<h2>testflight-upload.sh</h2>
+
+<h2>update-version.sh</h2>
 				</div>
 				<div id="footer">
 					<hr />
